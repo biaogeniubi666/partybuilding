@@ -609,7 +609,7 @@ function echarts_8() {
     }
 function echarts_9() {
         // 基于准备好的dom，初始化echarts实例
-    var myChart = echarts.init(document.getElementById('fb1')); 
+    var myChart = echarts.init(document.getElementById('echart9')); 
     option = {
         tooltip: {
             trigger: 'item',
@@ -656,7 +656,7 @@ function echarts_9() {
     }
 function echarts_10() {
         // 基于准备好的dom，初始化echarts实例
-    var myChart = echarts.init(document.getElementById('fb2')); 
+    var myChart = echarts.init(document.getElementById('echart10')); 
     option = {
         tooltip: {
             trigger: 'item',
