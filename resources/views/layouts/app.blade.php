@@ -9,7 +9,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>@yield('title', 'Owell') Owell平台 </title>
+    <title>@yield('title') Owell智慧健康可视化 </title>
 
     <!-- Js -->
     <script type="text/javascript" src="js/jquery.js"></script>

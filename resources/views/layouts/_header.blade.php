@@ -2,7 +2,7 @@
   <div class="row" style="padding-right: 0px; padding-left: 0px;margin-left: 0px;margin-right: 0px;">
       <div class="col-md-12">
         <div class="head">
-          <h1>Owell智慧健康办公-大数据可视化平台</h1>
+          <h1>Owell智慧健康平台</h1>
           <div class="weather"><!--<img src="picture/weather.png"><span>多云转小雨</span>--><span id="showTime"></span></div>
               
           {{-- 北京时间,有空再整 --}}
