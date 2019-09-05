@@ -78,34 +78,32 @@
               
         <div class="row" style="padding-right: 0px; padding-left: 0px;margin-left: 0px;margin-right: 0px;  ">  
             <div class="col-md-12"> 
-                <div class="boxall center-block" style="height: 3.2rem; padding-bottom: 0px; margin-bottom: 0px;">
-                                  
-                        <div class="sy">
+                <div class="boxall center-block" style="height: 3.2rem; padding-bottom: 0px; margin-bottom: 0px;">       
+                    <div class="sy">
+                        <button type="button" class="btn btn-primary center-block btn-sm" role="button">
+                            <span class="glyphicon glyphicon-star" aria-hidden="true"></span> 
+                            <p>情景3</p>
+                        </button>
+                    </div>                   
+                    <div class="sy">
                             <button type="button" class="btn btn-primary center-block btn-sm" role="button">
-                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span> 
-                                <p>情景3</p>
-                            </button>
-                        </div>                   
-                        <div class="sy">
-                                <button type="button" class="btn btn-primary center-block btn-sm" role="button">
-                                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span> 
-                                        <p>情景2</p>
-                                    </button>
-                        </div>                  
-                        <div class="sy">
-                                <button type="button" class="btn btn-primary center-block btn-sm" role="button">
-                                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span> 
-                                        <p>情景1</p>
-                                    </button>
-                        </div>
-                        <div class="sy">
-                                <button type="button" class="btn btn-warning center-block btn-sm" role="button">
-                                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span> 
-                                        <p>开\关</p>
-                                    </button>
-                        </div>
-                        <div class="boxfoot"></div>
-                                         
+                                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span> 
+                                    <p>情景2</p>
+                                </button>
+                    </div>                  
+                    <div class="sy">
+                            <button type="button" class="btn btn-primary center-block btn-sm" role="button">
+                                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span> 
+                                    <p>情景1</p>
+                                </button>
+                    </div>
+                    <div class="sy">
+                            <button type="button" class="btn btn-warning center-block btn-sm" role="button">
+                                    <span class="glyphicon glyphicon-star" aria-hidden="ture"></span> 
+                                    <p>开\关</p>
+                                </button>
+                    </div>
+                    <div class="boxfoot"></div>            
                 </div>
             </div>                            
      
