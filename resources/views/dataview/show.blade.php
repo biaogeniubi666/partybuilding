@@ -24,27 +24,27 @@
                 </div>
                 <div class="col-xs-12 col-md-3">
                     <div class="boxall" style="height: 3.6rem">
-                        <div class="alltitle">模块标题样式4</div>
-                        <div class="allnav" id="echart4"></div>
+                        <div class="alltitle">模块标题样式3</div>
+                        <div class="allnav" id="echart3"></div>
                         <div class="boxfoot"></div>
                     </div>
 
                     <div class="boxall" style="height: 3.6rem">
-                        <div class="alltitle">模块标题样式5</div>
-                        <div class="allnav" id="echart5"></div>
+                        <div class="alltitle">模块标题样式4</div>
+                        <div class="allnav" id="echart4"></div>
                         <div class="boxfoot"></div>
                     </div>
                 </div>
                 <div class="col-xs-12 col-md-3">
                     <div class="boxall" style="height: 3.6rem">
-                        <div class="alltitle">模块标题样式9</div>
-                        <div class="allnav" id="echart9"></div>
+                        <div class="alltitle">模块标题样式5</div>
+                        <div class="allnav" id="echart5"></div>
                         <div class="boxfoot"></div>
                     </div>
 
                     <div class="boxall" style="height: 3.6rem">
-                        <div class="alltitle">模块标题样式10</div>
-                        <div class="allnav" id="echart10"></div>
+                        <div class="alltitle">模块标题样式6</div>
+                        <div class="allnav" id="echart6"></div>
                         <div class="boxfoot"></div>
                     </div>
                 </div>
@@ -56,8 +56,8 @@
                         </ol>
                         <div class="carousel-inner" style="height: 3.6rem; margin-bottom: 30px;">
                             <div class="boxall carousel-item active" style="height: 3.6rem" > 
-                                <div class="alltitle">模块标题样式6</div>
-                                <div class="first-slide allnav" alt="First slide" id="echart6"></div> 
+                                <div class="alltitle">模块标题样式7</div>
+                                <div class="first-slide allnav" alt="First slide" id="echart7"></div> 
                                 <div class="boxfoot"></div> 
                             </div>  
                             <div class="boxall carousel-item" style="height: 3.6rem"> 
@@ -69,8 +69,11 @@
                                               
                     </div>
                     <div class="boxall" style="height: 3.6rem">
-                        <div class="alltitle">模块标题样式11</div>
-                        <div class="allnav" id="echart11"></div>
+                        <div class="alltitle">模块标题样式8</div>   
+                            <div class="syled"><img id="led1" class=""></div> 
+                            <div class="syled"><img id="led2" class=""></div>    
+                            <div class="syled"><img id="led3" class=""></div> 
+                        </div>
                         <div class="boxfoot"></div>
                     </div>
                 </div>      
@@ -99,10 +102,12 @@
                                     </button>
                         </div>
                         <div class="sy">
-                                <button type="button" class="btn btn-warning center-block btn-sm" role="button">
-                                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span> 
-                                        <p>开\关</p>
-                                    </button>
+                            <form action="{{ route('led.update') }}" method="POST" accept-charset="UTF-8">
+                                <button type="submit" class="btn btn-warning center-block btn-sm" role="button">
+                                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span> 
+                                    <p>开\关</p>
+                                </button>
+                            </form>
                         </div>
                         <div class="boxfoot"></div>
                                          

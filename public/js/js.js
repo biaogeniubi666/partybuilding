@@ -2,13 +2,12 @@
 $(function () {
 echarts_1();
 echarts_2();
+echarts_3();
 echarts_4();
 echarts_5();
-echarts_9();
-echarts_10();
 echarts_6();
-// echarts_8();
-echarts_11();
+echarts_7();
+echarts_8();
 
 
 function echarts_1() {
@@ -202,9 +201,9 @@ function echarts_2() {
             myChart.resize();
         });
     }
-function echarts_4() {
+function echarts_3() {
         // 基于准备好的dom，初始化echarts实例
-        var myChart = echarts.init(document.getElementById('echart4'));
+        var myChart = echarts.init(document.getElementById('echart3'));
     
     option = {
         tooltip: {
@@ -344,9 +343,9 @@ function echarts_4() {
             myChart.resize();
         });
     }
-function echarts_5() {
+function echarts_4() {
         // 基于准备好的dom，初始化echarts实例
-        var myChart = echarts.init(document.getElementById('echart5'));
+        var myChart = echarts.init(document.getElementById('echart4'));
 
        option = {
   //  backgroundColor: '#00265f',
@@ -442,9 +441,9 @@ function echarts_5() {
             myChart.resize();
         });
     }
-function echarts_6() {
+function echarts_5() {
         // 基于准备好的dom，初始化echarts实例
-        var myChart = echarts.init(document.getElementById('echart6'));
+        var myChart = echarts.init(document.getElementById('echart5'));
 
         var dataStyle = {
 	normal: {
@@ -585,31 +584,9 @@ option = {
             myChart.resize();
         });
     }            
-function echarts_8() {
+function echarts_6() {
         // 基于准备好的dom，初始化echarts实例
-    var myChart = echarts.init(document.getElementById('echart8'));
-    option = {
-        xAxis: {
-            type: 'category',
-            data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
-        },
-        yAxis: {
-            type: 'value'
-        },
-        series: [{
-            data: [120, 200, 150, 80, 70, 110, 130],
-            type: 'bar'
-        }]
-    };
-    // 使用刚指定的配置项和数据显示图表。
-    myChart.setOption(option);
-    window.addEventListener("resize",function(){
-        myChart.resize();
-        });
-    }
-function echarts_9() {
-        // 基于准备好的dom，初始化echarts实例
-    var myChart = echarts.init(document.getElementById('echart9')); 
+    var myChart = echarts.init(document.getElementById('echart6')); 
     option = {
         tooltip: {
             trigger: 'item',
@@ -654,9 +631,9 @@ function echarts_9() {
         myChart.resize();
     });
     }
-function echarts_10() {
+function echarts_7() {
         // 基于准备好的dom，初始化echarts实例
-    var myChart = echarts.init(document.getElementById('echart10')); 
+    var myChart = echarts.init(document.getElementById('echart7')); 
     option = {
         tooltip: {
             trigger: 'item',
@@ -700,8 +677,8 @@ function echarts_10() {
         myChart.resize();
     });
     }
-function echarts_11() {
-    var myChart = echarts.init(document.getElementById('echart11')); 
+function echarts_8() {
+    var myChart = echarts.init(document.getElementById('echart8')); 
     option = {
         tooltip: {
             trigger: 'axis',

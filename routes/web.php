@@ -12,3 +12,7 @@
 */
 
 Route::get('/', 'PagessController@index')->name('index');
+
+Route::post('LedsController@update')->name('led.update');
+
+Route::get('/ledshow', 'LedsController@show')->name('led.show');
