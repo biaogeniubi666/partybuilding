@@ -72,9 +72,10 @@
                         <div class="alltitle">模块标题样式8</div>   
                             <div class="syled"><img id="led1" class=""></div> 
                             <div class="syled"><img id="led2" class=""></div>    
-                            <div class="syled"><img id="led3" class=""></div> 
+                            <div class="syled"><img id="led3" class=""></div>
+                            <div class="boxfoot"></div>
                         </div>
-                        <div class="boxfoot"></div>
+                        
                     </div>
                 </div>      
         </div>   

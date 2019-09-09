@@ -14,10 +14,11 @@ class CreateLedStatusesTable extends Migration
     public function up()
     {
         Schema::create('led_statuses', function (Blueprint $table) {
+            $table->bigIncrements('id');
             $table->boolean('led1');
             $table->boolean('led2');
             $table->boolean('led3');
-            
+            $table->timestamps();
         });
     }
 

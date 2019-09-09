@@ -10,25 +10,22 @@ class LedsController extends Controller
 {
     public function update(){
 
-        $led1 = LedStatus::pluck('led1')->last();
-        $led2 = LedStatus::pluck('led1')->last();
-        $led3 = LedStatus::pluck('led1')->last();
-
-        return [
-            'lednew' => $led1,
-        ];
+        $led = LedStatus::first();
+        $lednew = ledonoff($led->id, $led->led1, $led->led2, $led->led3);
+        $led->update($lednew);
+        return redirect()->back();
     }
 
     public function show(){
 
-        $led1 = LedStatus::pluck('led1')->last();
-        $led2 = LedStatus::pluck('led1')->last();
-        $led3 = LedStatus::pluck('led1')->last();
-
+        $led = LedStatus::first();
+        $lednew = ledonoff($led->id, $led->led1, $led->led2, $led->led3);
+        $led->update($lednew);
         return [
-            $led1,
-            $led2,
-            $led3,
+            $led->led1,
+            $led->led2,
+            $led->led3,
+            $lednew
         ];
     }
 }
