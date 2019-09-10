@@ -34,8 +34,7 @@ function getdata(){
         error : function() {
             alert("异常！");
         }
-    })
-    
+    }) 
 }
 
 })
