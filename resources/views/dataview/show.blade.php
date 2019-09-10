@@ -70,9 +70,9 @@
                     </div>
                     <div class="boxall" style="height: 3.6rem">
                         <div class="alltitle">模块标题样式8</div>   
-                            <div class="syled"><img id="led1" class=""></div> 
-                            <div class="syled"><img id="led2" class=""></div>    
-                            <div class="syled"><img id="led3" class=""></div>
+                            <div class="syled"><img id="led1" class="center-block img-thumbnail"></div> 
+                            <div class="syled"><img id="led2" class="center-block img-thumbnail"></div>    
+                            <div class="syled"><img id="led3" class="center-block img-thumbnail"></div>
                             <div class="boxfoot"></div>
                         </div>
                         
@@ -102,13 +102,11 @@
                                         <p>情景1</p>
                                     </button>
                         </div>
-                        <div class="sy">
-                            <form action="{{ route('led.update') }}" method="POST" accept-charset="UTF-8">
-                                <button type="submit" class="btn btn-warning center-block btn-sm" role="button">
-                                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span> 
-                                    <p>开\关</p>
-                                </button>
-                            </form>
+                        <div class="sy">                  
+                            <button type="button" class="btn btn-warning center-block btn-sm" id="ledonoff" role="button">
+                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span> 
+                                <p>开\关</p>
+                            </button>
                         </div>
                         <div class="boxfoot"></div>
                                          
