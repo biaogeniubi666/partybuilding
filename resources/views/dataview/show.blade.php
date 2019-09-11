@@ -4,8 +4,7 @@
 
 @section('content')
 
-    <div class="row" style="padding-right: 0px; padding-left: 0px;margin-left: 0px;margin-right: 0px; ">
-        <div class="clearfix visible-xs-block"></div>    
+    <div class="row" style="padding-right: 0px; padding-left:0px; margin-left:9.5px; margin-right:9.5px;">  
         <div class="col-xs-12 col-sm-3">
             <div class="boxall" style="height: 3.6rem">
                 <div class="alltitle">模块标题样式1</div>
