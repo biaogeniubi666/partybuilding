@@ -11,4 +11,9 @@ class PagessController extends Controller
     {
     return view('dataview.show');
     }
+
+    public function phpinfo()
+    {
+    return view('phpinfo.phpinfo');
+    }
 }

@@ -97,7 +97,7 @@
                             </button>
                 </div>
                 <div class="sy">                  
-                    <button type="button" class="btn btn-warning center-block btn-sm" id="ledonoff" role="button">
+                    <button type="button" class="btn btn-warning center-block btn-sm" id="ledonoff">
                         <span class="glyphicon glyphicon-star" aria-hidden="true"></span> 
                         <p>开\关</p>
                     </button>

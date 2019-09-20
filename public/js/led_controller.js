@@ -17,7 +17,6 @@ function onoff() {
     })
 }
 
-
 function getdata(){
     $.ajax({
         url:'/ledshow',

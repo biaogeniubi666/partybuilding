@@ -11,6 +11,7 @@
 |
 */
 
+Route::get('/phpinfo', 'PagessController@phpinfo')->name('phpinfo');
 Route::get('/', 'PagessController@index')->name('index');
 
 Route::get('/ledonoff', 'LedsController@update')->name('led.update');
