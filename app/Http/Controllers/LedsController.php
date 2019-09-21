@@ -17,7 +17,7 @@ class LedsController extends Controller
 
     public function show(){
 
-        $led = LedStatus::find(3);
+        $led = LedStatus::first();
         return [
             $led->led1,
             $led->led2,
