@@ -12,7 +12,7 @@
                 <div class="boxfoot"></div>
             </div>
 
-            <div class="boxall">
+            <div class="boxall" style="margin-bottom: 0px;">
                 <div class="alltitle">可挥发化合物（VOC）指标：毫克 / 立方米</div>
                 <div class="allnav" id="echart2"></div>
                 <div class="boxfoot"></div>
@@ -26,7 +26,7 @@
                 <div class="boxfoot"></div>
             </div>
 
-            <div class="boxall">
+            <div class="boxall" style="margin-bottom: 0px;">
                 <div class="alltitle">实时温度：摄氏度</div>
                 <div class="allnav" id="echart4"></div>
                 <div class="boxfoot"></div>
@@ -40,7 +40,7 @@
                 <div class="boxfoot"></div>
             </div>
 
-            <div class="boxall">
+            <div class="boxall" style="margin-bottom: 0px;">
                 <div class="alltitle">甲醛指标：毫克 / 立方米</div>
                 <div class="allnav" id="echart6"></div>
                 <div class="boxfoot"></div>
@@ -62,7 +62,7 @@
                 </div>
             </div>
 
-            <div class="boxall">     
+            <div class="boxall" style="margin-bottom: 0px;">     
                 <div class="alltitle">灯光模拟输出</div>   
                 <div class="syled"><img id="led1" class="center-block img-thumbnail"></div> 
                 <div class="syled"><img id="led2" class="center-block img-thumbnail"></div>    

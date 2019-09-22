@@ -33,9 +33,9 @@ var myChart = echarts.init(document.getElementById('echart1'));
         },
 
         grid: {
-            left: '5%',
+            left: '0%',
             top: '10%',
-            right: '15%',
+            right: '20%',
             bottom: '3%',
             containLabel: true
         },
@@ -152,6 +152,7 @@ function echarts_2() {
                 type: 'shadow'
             }
         },
+
         legend: {
         top:'0%',
             data:['VOC'],
@@ -160,10 +161,11 @@ function echarts_2() {
                 fontSize:'12',
             }
         },
+
         grid: {
-            left: '5%',
+            left: '0%',
             top: '10%',
-            right: '15%',
+            right: '20%%',
             bottom: '3%',
             containLabel: true
         },
@@ -219,6 +221,7 @@ function echarts_2() {
                 }
             },
         }],
+
         series: [{
             name: '可挥发化合物VOC',
             type: 'bar',
@@ -453,9 +456,9 @@ function echarts_5() {
     option = {
 
         grid: {
-            left: '5%',
+            left: '0%',
             top:'10px',
-            right: '15%',
+            right: '20%',
             bottom: '3%',
            containLabel: true
         },
@@ -604,6 +607,7 @@ function echarts_6() {
                 type: 'shadow'
             }
         },
+
         legend: {
         top:'0%',
             data:['VOC'],
@@ -612,10 +616,11 @@ function echarts_6() {
                 fontSize:'12',
             }
         },
+
         grid: {
-            left: '5%',
+            left: '0%',
             top: '10%',
-            right: '15%',
+            right: '20%',
             bottom: '3%',
             containLabel: true
         },
@@ -671,6 +676,7 @@ function echarts_6() {
                 }
             },
         }],
+        
         series: [{
             name: '甲醛浓度 毫克/每立方',
             type: 'bar',

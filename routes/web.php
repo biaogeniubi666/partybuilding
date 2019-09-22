@@ -10,12 +10,16 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+// phpinfo测试页面
 Route::get('/phpinfo', 'PagessController@phpinfo')->name('phpinfo');
+
+//主页
 Route::get('/', 'PagessController@index')->name('index');
 
+// 灯光控制和模拟展示
 Route::get('/ledonoff', 'LedsController@update')->name('led.update');
-
 Route::get('/ledshow', 'LedsController@show')->name('led.show');
 
 // Route::post('/ledonff', 'LedsController@update')->name('led.update');
+
+Route::get('/airdatashow','AirshowController@airdata')->name('airdata');
