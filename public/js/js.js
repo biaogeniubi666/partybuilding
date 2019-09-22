@@ -7,12 +7,13 @@ function airdata(){
     $.ajax({
         url:'/airdatashow',
         type:'get',
-        success: function ([resultco2, resultvoc, resultpm25, resultch2o, resulthum,resulttem]) {
+        dataType: "json",
+        success: function (resultco2, resultvoc, resultpm25, resultch2o, resulthum,resulttem) {
             echarts_1(resultco2);
             echarts_2(resultvoc);
             echarts_3(resulthum);
             echarts_4(resulttem);
-            echarts_5(resultpm25);
+            // echarts_5(resultpm25);
             echarts_6(resultch2o);
         },
         error : function() {
