@@ -8,6 +8,7 @@ use App\Models\LedStatus;
 
 class LedsController extends Controller
 {
+
     public function update(){
 
         $led = LedStatus::first();

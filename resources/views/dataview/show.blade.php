@@ -6,75 +6,92 @@
 
     <div class="row" style="padding-right: 0px; padding-left:0px; margin-left:9.5px; margin-right:9.5px;">  
         <div class="col-xs-12 col-sm-3">
-            <div class="boxall" style="height: 3.6rem">
-                <div class="alltitle">模块标题样式1</div>
+            <div class="boxall">
+                <div class="alltitle">二氧化碳（CO2）指标：毫升 / 立方米</div>
                 <div class="allnav" id="echart1"></div>
                 <div class="boxfoot"></div>
             </div>
 
-            <div class="boxall" style="height: 3.6rem">
-                <div class="alltitle">模块标题样式2</div>
+            <div class="boxall" style="margin-bottom: 0px;">
+                <div class="alltitle">可挥发化合物（VOC）指标：毫克 / 立方米</div>
                 <div class="allnav" id="echart2"></div>
                 <div class="boxfoot"></div>
             </div>
         </div>
+
         <div class="col-xs-12 col-sm-3">
-            <div class="boxall" style="height: 3.6rem">
-                <div class="alltitle">模块标题样式3</div>
+            <div class="boxall">
+                <div class="alltitle">实时湿度：相对百分比</div>
                 <div class="allnav" id="echart3"></div>
                 <div class="boxfoot"></div>
             </div>
 
-            <div class="boxall" style="height: 3.6rem">
-                <div class="alltitle">模块标题样式4</div>
+            <div class="boxall" style="margin-bottom: 0px;">
+                <div class="alltitle">实时温度：摄氏度</div>
                 <div class="allnav" id="echart4"></div>
                 <div class="boxfoot"></div>
             </div>
         </div>
+
         <div class="col-xs-12 col-sm-3">
-            <div class="boxall" style="height: 3.6rem">
-                <div class="alltitle">模块标题样式5</div>
+            <div class="boxall">
+                <div class="alltitle">PM2.5指标：微克 / 立方米</div>
                 <div class="allnav" id="echart5"></div>
                 <div class="boxfoot"></div>
             </div>
 
-            <div class="boxall" style="height: 3.6rem">
-                <div class="alltitle">模块标题样式6</div>
+            <div class="boxall" style="margin-bottom: 0px;">
+                <div class="alltitle">甲醛指标：毫克 / 立方米</div>
                 <div class="allnav" id="echart6"></div>
                 <div class="boxfoot"></div>
             </div>
         </div>
+
         <div class="col-xs-12 col-sm-3">
-            <div id="myCarousel" class="carousel slide">
-                <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                </ol>
-                <div class="carousel-inner" style="height: 3.6rem; margin-bottom: 30px;">
-                    <div class="boxall carousel-item active" style="height: 3.6rem" > 
-                        <div class="alltitle">模块标题样式7</div>
-                        <div class="first-slide allnav" alt="First slide" id="echart7"></div> 
-                        <div class="boxfoot"></div> 
-                    </div>  
-                    <div class="boxall carousel-item" style="height: 3.6rem"> 
-                        <div class="alltitle">模块标题样式?</div>
-                        <div class="second-slide allnav" alt="Second slide" id="echart?" ></div>
-                        <div class="boxfoot"></div>
-                    </div>
-                </div>                
-            </div>
-            <div class="boxall" style="height: 3.6rem">
-                <div class="alltitle">模块标题样式8</div>   
-                    <div class="syled"><img id="led1" class="center-block img-thumbnail"></div> 
-                    <div class="syled"><img id="led2" class="center-block img-thumbnail"></div>    
-                    <div class="syled"><img id="led3" class="center-block img-thumbnail"></div>
-                    <div class="boxfoot"></div>
+
+            <div class="boxall">
+                <div class="alltitle">总灯光控制</div>
+                <button type="button" class="btn btn-success btn-sm center-block" aria-label="Left Align" id="ledonoff"
+                    style="padding-bottom: 0px; padding-top: 0px; margin-top: 0.2rem;">
+                    <i class="far fa-lemon " aria-hidden="true"></i> 
+                    <p style="font-size:.3rem;">总开关</p>
+                </button>
+                <div> 
+                <div class="syled"><img id="led1" class="center-block img-thumbnail"></div> 
+                <div class="syled"><img id="led2" class="center-block img-thumbnail"></div>    
+                <div class="syled"><img id="led3" class="center-block img-thumbnail"></div>
                 </div>
             </div>
-        </div>      
-    </div>   
-            
-    <div class="row" style="padding-right: 0px; padding-left:0px; margin-left:9.5px; margin-right:9.5px;">
+
+            <div class="boxall" style="margin-bottom: 0px;">     
+                <div class="alltitle">灯光模拟输出</div>   
+                <div class="syled">
+                    <a type="button" href="{{ route('index') }}" 
+                        class="btn btn-success center-block btn-sm" 
+                        aria-label="Left Align">
+                        <p style="font-size:.25rem;">刷新</p>
+                    </a>    
+                </div> 
+                <div class="syled">
+                        <a type="button" href="{{ route('index') }}" 
+                        class="btn btn-success center-block btn-sm" 
+                        aria-label="Left Align">
+                        <p style="font-size:.25rem;">刷新</p>
+                    </a>   
+                </div>    
+                <div class="syled">
+                        <a type="button" href="{{ route('index') }}" 
+                        class="btn btn-success center-block btn-sm" 
+                        aria-label="Left Align">
+                        <p style="font-size:.25rem;">刷新</p>
+                    </a>   
+                </div>
+                <div class="boxfoot"></div>
+            </div>
+        </div>
+    </div>      
+
+    {{-- <div class="row" style="padding-right: 0px; padding-left:0px; margin-left:9.5px; margin-right:9.5px;">
         <div class="clearfix visible-xs-block"></div>  
         <div class="col-md-12"> 
             <div class="boxall center-block" style="height: 3.2rem; padding-bottom: 0px; margin-bottom: 0px;">
@@ -97,7 +114,7 @@
                             </button>
                 </div>
                 <div class="sy">                  
-                    <button type="button" class="btn btn-warning center-block btn-sm" id="ledonoff" role="button">
+                    <button type="button" class="btn btn-warning center-block btn-sm" id="ledonoff">
                         <span class="glyphicon glyphicon-star" aria-hidden="true"></span> 
                         <p>开\关</p>
                     </button>
@@ -105,6 +122,6 @@
                 <div class="boxfoot"></div>                           
             </div>
         </div>                                      
-    </div>
+    </div> --}}
 
 @stop
