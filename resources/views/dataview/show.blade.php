@@ -64,9 +64,15 @@
 
             <div class="boxall" style="margin-bottom: 0px;">     
                 <div class="alltitle">灯光模拟输出</div>   
-                <div class="syled"><img id="led1" class="center-block img-thumbnail"></div> 
-                <div class="syled"><img id="led2" class="center-block img-thumbnail"></div>    
-                <div class="syled"><img id="led3" class="center-block img-thumbnail"></div>
+                <div class="syled">
+                    <a type="button" href="{{ route('index') }}" 
+                        class="btn btn-success center-block btn-sm" 
+                        aria-label="Center Align">
+                        <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+                    </a>    
+                </div> 
+                <div class="syled"></div>    
+                <div class="syled"></div>
                 <div class="boxfoot"></div>
             </div>
         </div>
