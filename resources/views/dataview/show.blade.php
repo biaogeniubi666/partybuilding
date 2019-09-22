@@ -51,9 +51,10 @@
 
             <div class="boxall">
                 <div class="alltitle">总灯光控制</div>
-                <button type="button" class="btn btn-info btn-sm center-block" aria-label="Left Align" id="ledonoff"
-                    style="padding-bottom: 0px; padding-top: 0px; margin-top: 70px;">
-                    <i class="far fa-save mr-2" aria-hidden="true"></i> 总开关
+                <button type="button" class="btn btn-success btn-sm center-block" aria-label="Left Align" id="ledonoff"
+                    style="padding-bottom: 0px; padding-top: 0px; margin-top: 0.2rem;">
+                    <i class="far fa-lemon " aria-hidden="true"></i> 
+                    <p style="font-size:.3rem;">总开关</p>
                 </button>
                 <div> 
                 <div class="syled"><img id="led1" class="center-block img-thumbnail"></div> 
@@ -67,12 +68,24 @@
                 <div class="syled">
                     <a type="button" href="{{ route('index') }}" 
                         class="btn btn-success center-block btn-sm" 
-                        aria-label="Center Align">
-                        <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+                        aria-label="Left Align">
+                        <p style="font-size:.25rem;">刷新</p>
                     </a>    
                 </div> 
-                <div class="syled"></div>    
-                <div class="syled"></div>
+                <div class="syled">
+                        <a type="button" href="{{ route('index') }}" 
+                        class="btn btn-success center-block btn-sm" 
+                        aria-label="Left Align">
+                        <p style="font-size:.25rem;">刷新</p>
+                    </a>   
+                </div>    
+                <div class="syled">
+                        <a type="button" href="{{ route('index') }}" 
+                        class="btn btn-success center-block btn-sm" 
+                        aria-label="Left Align">
+                        <p style="font-size:.25rem;">刷新</p>
+                    </a>   
+                </div>
                 <div class="boxfoot"></div>
             </div>
         </div>

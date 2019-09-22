@@ -117,8 +117,8 @@ a:hover{ color:#06c; text-decoration: none!important}
 .wrap{ height:2.54rem; overflow: hidden;}
 .wrap li{  line-height:.42rem; height:.42rem; font-size: .18rem; text-indent: .24rem; margin-bottom: .1rem; }
 .wrap li p{border: 1px solid rgba(25,186,139,.17);color: rgba(255,255,255,.6); }
-.sy{ float:left; width: 25%; height:80%; margin-top: .7rem;}
-.syled{ float:left; width:33%; height:60%; margin-top: .7rem;}
+.sy{ float:left; width: 25%; height:80%; margin-top: .7rem;margin-top: .7rem;}
+.syled{ float:left; width:30%; height:60%; margin-top: .7rem; margin-right: 0.05rem; margin-left: 0.05rem;}
 .sylsw{ float:left; width:33%; height:50%; margin-top: .7rem;}
 
 
