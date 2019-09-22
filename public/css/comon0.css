@@ -6,7 +6,12 @@
 	box-sizing: border-box}
 *,body{padding:0px;	margin:0px;color: #222;font-family: "微软雅黑";}
 @font-face{font-family:electronicFont;src:url(../font/DS-DIGIT.TTF)}
-body{ background:#000d4a url(../images/bg1.png) center top; background-size:cover;color:#666;font-size: .1rem;}
+body{ background:#000d4a url(../images/bg1.png) center top; 
+	background-size:cover;
+	color:#666;font-size: .1rem;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
 li{ list-style-type:none;}
 table{}
 i{ margin:0px; padding:0px; text-indent:0px;}
@@ -26,12 +31,11 @@ a:hover{ color:#06c; text-decoration: none!important}
 }
 .pulll_left{float:left;}
 .pulll_right{float:right;}
-/*谷哥滚动条样式*/
 
+/*谷哥滚动条样式*/
   ::-webkit-scrollbar {width:5px;height:5px;position:absolute}
   ::-webkit-scrollbar-thumb {background-color:#5bc0de}
   ::-webkit-scrollbar-track {background-color:#ddd}
-
 /***/
 .canvas{position: absolute; width:60%; left: 0; top: 0; height: 99%;}
 
