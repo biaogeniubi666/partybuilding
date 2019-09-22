@@ -7,14 +7,13 @@ function airdata(){
     $.ajax({
         url:'/airdatashow',
         type:'get',
-        dataType: "json",
-        success: function (resultco2, resultvoc, resultpm25, resultch2o, resulthum,resulttem) {
-            echarts_1(resultco2);
-            echarts_2(resultvoc);
-            echarts_3(resulthum);
-            echarts_4(resulttem);
-            // echarts_5(resultpm25);
-            echarts_6(resultch2o);
+        success: function (result) {
+            echarts_1(result[0]);
+            echarts_2(result[1]);
+            echarts_3(result[4]);
+            echarts_4(result[5]);
+            echarts_5(result[2]);
+            echarts_6(result[3]);
         },
         error : function() {
             alert("数据异常！");
