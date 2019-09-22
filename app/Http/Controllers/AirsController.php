@@ -22,7 +22,18 @@ class AirsController extends Controller
 
     public function show(Air $air)
     {
-        return view('airs.show', compact('air'));
+		$maxid = Air::max('id') - 10;
+        $co2_forchart = Air::where('id', '>', $maxid)->pluck('CO2');
+        $voc_forchart = Air::where('id', '>', $maxid)->pluck('VOC');
+        $pm25_forchart = Air::where('id', '>', $maxid)->pluck('PM25');
+        $ch2o_forchart = Air::where('id', '>', $maxid)->pluck('CH2O');
+
+        $humi = Air::pluck('HUMI')->last();
+        $temp = Air::pluck('TEMP')->last();
+
+        return [$co2_forchart, $voc_forchart,
+		$pm25_forchart, $ch2o_forchart, $humi, $temp];
+		
     }
 
 	public function create(Air $air)

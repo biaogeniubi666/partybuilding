@@ -1,17 +1,30 @@
 ﻿
 $(function () {
-echarts_1();
-echarts_2();
-echarts_3();
-echarts_4();
-echarts_5();
-echarts_6();
-echarts_7();
-echarts_8();
 
-function echarts_1() {
+airdata();setInterval(function(){airdata();}, 60000);
+
+function airdata(){
+    $.ajax({
+        url:'/airdatashow',
+        type:'get',
+        success: function ([resultco2, resultvoc, resultpm25, resultch2o, resulthum,resulttem]) {
+            echarts_1(resultco2);
+            echarts_2(resultvoc);
+            echarts_3(resulthum);
+            echarts_4(resulttem);
+            echarts_5(resultpm25);
+            echarts_6(resultch2o);
+        },
+        error : function() {
+            alert("数据异常！");
+        }
+    })
+}
+
+function echarts_1(resultdata) {
+
     // 基于准备好的dom，初始化echarts实例
-var myChart = echarts.init(document.getElementById('echart1'));
+    var myChart = echarts.init(document.getElementById('echart1'));   
 
     option = {
         tooltip: {
@@ -111,7 +124,7 @@ var myChart = echarts.init(document.getElementById('echart1'));
                         borderWidth: 12
                     }
                 },
-                data: [570, 230, 500, 770, 650, 295, 444, 401, 261, 777],
+                data: resultdata,
                 markLine:{
                     silent: false,
                     symbol: 'none',
@@ -141,7 +154,7 @@ var myChart = echarts.init(document.getElementById('echart1'));
     });
 }
 
-function echarts_2() {
+function echarts_2(resultdata) {
     // 基于准备好的dom，初始化echarts实例
     var myChart = echarts.init(document.getElementById('echart2'));
 
@@ -225,7 +238,7 @@ function echarts_2() {
         series: [{
             name: '可挥发化合物VOC',
             type: 'bar',
-            data: [0.21, 0.3, 0.2, 0.4, 0.17, 0.12, 0.33, 0.19, 0.26, 0.32],
+            data: resultdata,
             barWidth:'30%', //柱子宽度
             itemStyle: {
                 normal: {
@@ -262,7 +275,7 @@ function echarts_2() {
     });
 }
 
-function echarts_3() {
+function echarts_3(resultdata) {
     // 基于准备好的dom，初始化echarts实例
     var myChart = echarts.init(document.getElementById('echart3'));
 
@@ -278,6 +291,7 @@ function echarts_3() {
         tooltip : {
             formatter: "{a} <br/>{b} : {c}%"
         },
+
         series: [
             {
                 name:'速度',
@@ -286,7 +300,7 @@ function echarts_3() {
                 max:100,
                 splitNumber:5,
                 center : ['50%', '55%'],
-                radius: '100%',
+                radius: '90%',
                 axisLine: {            // 坐标轴线
                     lineStyle: {       // 属性lineStyle控制线条样式
                         color: [[0.6, '#436EEE'],[0.8, 'lime'],[1, '#ff4500']],
@@ -341,10 +355,11 @@ function echarts_3() {
                     offsetCenter: [0, '50%'],       // x, y，单位px
                     textStyle: {       // 其余属性默认使用全局文本样式，详见TEXTSTYLE
                         fontWeight: 'bolder',
+                        fontSize: 20,
                         color: '#FCFCFC'
                     }
                 },
-                data:[{value: 40, name: '%'}]
+                data:[{value: resultdata, name: '%'}]
             }]
     };
 
@@ -355,7 +370,7 @@ function echarts_3() {
     });
 }
 
-function echarts_4() {
+function echarts_4(resultdata) {
     // 基于准备好的dom，初始化echarts实例
 var myChart = echarts.init(document.getElementById('echart4'));
 
@@ -371,6 +386,7 @@ var myChart = echarts.init(document.getElementById('echart4'));
     tooltip : {
         formatter: "{a} <br/>{b} : {c}%"
     },
+
     series: [
         {
             name:'温度仪表盘',
@@ -379,7 +395,7 @@ var myChart = echarts.init(document.getElementById('echart4'));
             max:60,
             splitNumber:4,
             center : ['50%', '55%'],
-            radius: '100%',
+            radius: '90%',
             axisLine: {            // 坐标轴线
                 lineStyle: {       // 属性lineStyle控制线条样式
                     color: [[0.35, '#436EEE'],[0.45, 'lime'],[1, '#ff4500']],
@@ -434,11 +450,12 @@ var myChart = echarts.init(document.getElementById('echart4'));
                 offsetCenter: [0, '50%'],       // x, y，单位px
                 textStyle: {       // 其余属性默认使用全局文本样式，详见TEXTSTYLE
                     fontWeight: 'bolder',
+                    fontSize: 20,
                     color: '#FCFCFC',
                     
                 }
             },
-            data:[{value: 23, name: '℃'}]
+            data:[{value: resultdata, name: '℃'}]
         }]
     };
   
@@ -449,7 +466,7 @@ var myChart = echarts.init(document.getElementById('echart4'));
     });
 }
 
-function echarts_5() {
+function echarts_5(resultdata) {
     // 基于准备好的dom，初始化echarts实例
     var myChart = echarts.init(document.getElementById('echart5'));
 
@@ -555,7 +572,7 @@ function echarts_5() {
         series: [{
             name: 'Beijing AQI',
             type: 'line',
-            data: [54, 200, 104, 330, 111, 32, 144, 55, 136, 177],
+            data: resultdata,
 
             markLine: {
                 silent: false,
@@ -596,7 +613,7 @@ function echarts_5() {
     });
 }    
 
-function echarts_6() {
+function echarts_6(resultdata) {
     // 基于准备好的dom，初始化echarts实例
     var myChart = echarts.init(document.getElementById('echart6'));
 
@@ -641,11 +658,6 @@ function echarts_6() {
                 }
             },
             
-        }, {
-            axisPointer: {show: false},
-            axisLine: {  show: false},
-            position: 'bottom',
-            offset: 20,
         }],
     
         yAxis: [{
@@ -680,7 +692,7 @@ function echarts_6() {
         series: [{
             name: '甲醛浓度 毫克/每立方',
             type: 'bar',
-            data: [0.01, 0.03, 0.03, 0.04, 0.017, 0.012, 0.033, 0.09, 0.06, 0.032],
+            data: resultdata,
             barWidth:'30%', //柱子宽度
             itemStyle: {
                 normal: {
