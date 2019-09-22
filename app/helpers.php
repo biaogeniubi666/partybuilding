@@ -16,14 +16,8 @@ function ledonoff($id, $led1, $led2, $led3)
     return $lednew;
 }
 
-// function ledonoff($id, $led3)
-// {
-//     if ($led3 ==0) {
 
-//         $led3 = 1;
-//     } else {
-//         $led3 = 0;
-//     }
-//     $lednew = ['id'=>$id , 'led3'=>$led3];
-//     return $lednew;
-// }
+function randomFloat($min = 0, $max = 1) {
+    //用于测试，定义一个函数用于生成指定最大最小范围内随机浮点数
+    return $min + mt_rand() / mt_getrandmax() * ($max - $min);
+}

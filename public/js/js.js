@@ -226,7 +226,7 @@ function echarts_2() {
             name: '可挥发化合物VOC',
             type: 'bar',
             data: [0.21, 0.3, 0.2, 0.4, 0.17, 0.12, 0.33, 0.19, 0.26, 0.32],
-            barWidth:'50%', //柱子宽度
+            barWidth:'30%', //柱子宽度
             itemStyle: {
                 normal: {
                     color:'#00B2EE',
@@ -681,7 +681,7 @@ function echarts_6() {
             name: '甲醛浓度 毫克/每立方',
             type: 'bar',
             data: [0.01, 0.03, 0.03, 0.04, 0.017, 0.012, 0.033, 0.09, 0.06, 0.032],
-            barWidth:'50%', //柱子宽度
+            barWidth:'30%', //柱子宽度
             itemStyle: {
                 normal: {
                     color:'#FFE74C',
