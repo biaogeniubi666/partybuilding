@@ -23,3 +23,4 @@ Route::get('/ledshow', 'LedsController@show')->name('led.show');
 // Route::post('/ledonff', 'LedsController@update')->name('led.update');
 
 Route::get('/airdatashow','AirshowController@airdata')->name('airdata');
+Route::resource('airs', 'AirsController', ['only' => ['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']]);
