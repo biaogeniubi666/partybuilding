@@ -12,6 +12,11 @@ class LedsController extends Controller
         socketphp();
         return redirect()->back();
     }
+    
+    public function socketpython(){
+        ppython("test_socket::go");
+        return redirect()->back();
+    }
 
     public function update(){
 

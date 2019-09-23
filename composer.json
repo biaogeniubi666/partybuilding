@@ -42,7 +42,8 @@
             "database/factories"
         ],
         "files":[
-            "app/helpers.php"
+            "app/Helpers/helpers.php",
+            "app/Helpers/Python/php/php_python.php"
         ]
     },
     "autoload-dev": {

@@ -26,9 +26,9 @@ function socketphp ()
 {
     set_time_limit(0); //限制执行时间  0为不限制
 
-    $ip = '172.16.85.52';
+    $ip = '10.0.75.1';
 
-    $port = 12346;//端口
+    $port = 55555;//端口
 
     if(($sock = socket_create(AF_INET,SOCK_STREAM,SOL_TCP)) < 0) {
         echo "socket_create() 失败的原因是:".socket_strerror($sock)."\n";
