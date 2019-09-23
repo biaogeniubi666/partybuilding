@@ -8,6 +8,9 @@ use App\Models\LedStatus;
 
 class LedsController extends Controller
 {
+    public function socketphp(){
+        socketphp();
+    }
 
     public function update(){
 

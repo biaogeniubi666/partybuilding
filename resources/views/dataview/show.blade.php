@@ -51,41 +51,43 @@
 
             <div class="boxall">
                 <div class="alltitle">总灯光控制</div>
-                <button type="button" class="btn btn-success btn-sm center-block" aria-label="Left Align" id="ledonoff"
+                <button type="button" class="btn btn-success btn-sm center-block" 
+                    aria-label="Left Align" id="ledonoff"
                     style="padding-bottom: 0px; padding-top: 0px; margin-top: 0.2rem;">
                     <i class="far fa-lemon " aria-hidden="true"></i> 
                     <p style="font-size:.3rem;">总开关</p>
                 </button>
+                <div class="syled">
+                        <a type="button" href="{{ route('led.socketphp') }}" 
+                            class="btn btn-success center-block btn-sm" 
+                            aria-label="Left Align">
+                            <p style="font-size:.25rem;">圆顶</p>
+                        </a>    
+                    </div> 
+                    <div class="syled">
+                            <a type="button" href="#" 
+                            class="btn btn-success center-block btn-sm" 
+                            aria-label="Left Align">
+                            <p style="font-size:.25rem;">带灯</p>
+                        </a>   
+                    </div>    
+                    <div class="syled">
+                            <a type="button" href="{{ route('index') }}" 
+                            class="btn btn-success center-block btn-sm" 
+                            aria-label="Left Align">
+                            <p style="font-size:.25rem;">环灯</p>
+                        </a>   
+                    </div>
                 <div> 
-                <div class="syled"><img id="led1" class="center-block img-thumbnail"></div> 
-                <div class="syled"><img id="led2" class="center-block img-thumbnail"></div>    
-                <div class="syled"><img id="led3" class="center-block img-thumbnail"></div>
+                
                 </div>
             </div>
 
             <div class="boxall" style="margin-bottom: 0px;">     
                 <div class="alltitle">灯光模拟输出</div>   
-                <div class="syled">
-                    <a type="button" href="{{ route('index') }}" 
-                        class="btn btn-success center-block btn-sm" 
-                        aria-label="Left Align">
-                        <p style="font-size:.25rem;">刷新</p>
-                    </a>    
-                </div> 
-                <div class="syled">
-                        <a type="button" href="{{ route('index') }}" 
-                        class="btn btn-success center-block btn-sm" 
-                        aria-label="Left Align">
-                        <p style="font-size:.25rem;">刷新</p>
-                    </a>   
-                </div>    
-                <div class="syled">
-                        <a type="button" href="{{ route('index') }}" 
-                        class="btn btn-success center-block btn-sm" 
-                        aria-label="Left Align">
-                        <p style="font-size:.25rem;">刷新</p>
-                    </a>   
-                </div>
+                <div class="syled"><img id="led1" class="center-block img-thumbnail"></div> 
+                <div class="syled"><img id="led2" class="center-block img-thumbnail"></div>    
+                <div class="syled"><img id="led3" class="center-block img-thumbnail"></div>
                 <div class="boxfoot"></div>
             </div>
         </div>
