@@ -61,7 +61,7 @@
                         <a type="button" href="{{ route('led.socketphp') }}" 
                             class="btn btn-success center-block btn-sm" 
                             aria-label="Left Align">
-                            <p style="font-size:.25rem;">圆顶</p>
+                            <p style="font-size:.25rem;">测试</p>
                         </a>    
                     </div> 
                     <div class="syled">

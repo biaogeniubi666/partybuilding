@@ -10,6 +10,7 @@ class LedsController extends Controller
 {
     public function socketphp(){
         socketphp();
+        return redirect()->back();
     }
 
     public function update(){
