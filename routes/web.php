@@ -17,10 +17,11 @@ Route::get('/phpinfo', 'PagessController@phpinfo')->name('phpinfo');
 Route::get('/', 'PagessController@index')->name('index');
 
 // 灯光控制和模拟展示
-Route::get('/socketphp', 'LedsController@socketphp')->name('led.socketphp');
+
 Route::get('/ledonoff', 'LedsController@update')->name('led.update');
 Route::get('/ledshow', 'LedsController@show')->name('led.show');
-
+Route::get('/socketphp', 'LedsController@socketphp')->name('led.socketphp');
+Route::get('/socketpython', 'LedsController@socketpython')->name('led.socketpython');
 // Route::post('/ledonff', 'LedsController@update')->name('led.update');
 
 Route::get('/airdatashow','AirshowController@airdata')->name('airdata');

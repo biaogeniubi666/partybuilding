@@ -61,21 +61,21 @@
                         <a type="button" href="{{ route('led.socketphp') }}" 
                             class="btn btn-success center-block btn-sm" 
                             aria-label="Left Align">
-                            <p style="font-size:.25rem;">测试</p>
+                            <p style="font-size:.2rem;">测试1</p>
                         </a>    
                     </div> 
                     <div class="syled">
                             <a type="button" href="#" 
                             class="btn btn-success center-block btn-sm" 
                             aria-label="Left Align">
-                            <p style="font-size:.25rem;">带灯</p>
+                            <p style="font-size:.2rem;">带灯</p>
                         </a>   
                     </div>    
                     <div class="syled">
-                            <a type="button" href="{{ route('index') }}" 
+                            <a type="button" href="{{ route('led.socketpython') }}" 
                             class="btn btn-success center-block btn-sm" 
                             aria-label="Left Align">
-                            <p style="font-size:.25rem;">环灯</p>
+                            <p style="font-size:.2rem;">测试2</p>
                         </a>   
                     </div>
                 <div> 
