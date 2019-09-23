@@ -17,6 +17,7 @@ Route::get('/phpinfo', 'PagessController@phpinfo')->name('phpinfo');
 Route::get('/', 'PagessController@index')->name('index');
 
 // 灯光控制和模拟展示
+Route::get('/socketphp', 'LedsController@socketphp')->name('led.socketphp');
 Route::get('/ledonoff', 'LedsController@update')->name('led.update');
 Route::get('/ledshow', 'LedsController@show')->name('led.show');
 

@@ -297,7 +297,7 @@ function echarts_3(resultdata) {
                 name:'速度',
                 type:'gauge',
                 min:0,
-                max:100,
+                max:99,
                 splitNumber:5,
                 center : ['50%', '55%'],
                 radius: '90%',
@@ -355,7 +355,7 @@ function echarts_3(resultdata) {
                     offsetCenter: [0, '50%'],       // x, y，单位px
                     textStyle: {       // 其余属性默认使用全局文本样式，详见TEXTSTYLE
                         fontWeight: 'bolder',
-                        fontSize: 20,
+                        fontSize: 12,
                         color: '#FCFCFC'
                     }
                 },
@@ -450,7 +450,7 @@ var myChart = echarts.init(document.getElementById('echart4'));
                 offsetCenter: [0, '50%'],       // x, y，单位px
                 textStyle: {       // 其余属性默认使用全局文本样式，详见TEXTSTYLE
                     fontWeight: 'bolder',
-                    fontSize: 20,
+                    fontSize: 12,
                     color: '#FCFCFC',
                     
                 }
