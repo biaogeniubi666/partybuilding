@@ -52,28 +52,28 @@
             <div class="boxall">
                 <div class="alltitle">总灯光控制</div>
                 <a type="button" class="btn btn-success btn-sm center-block" 
-                    href="{{ route('led.socketpython',0) }}"
+                    id="ledswitch_all"
                     aria-label="Left Align"
                     style="padding-bottom: 0px; padding-top: 0px; margin-top: 0.2rem;">
                     <i class="far fa-lemon " aria-hidden="true"></i> 
                     <p style="font-size:.3rem;">总开关</p>
                 </a>
                 <div class="syled">
-                    <a type="button" href="{{ route('led.socketpython',1) }}"
+                    <a type="button" id="ledswitch_led1"
                         class="btn btn-success center-block btn-sm" 
                         aria-label="Left Align">
                         <p style="font-size:.2rem;">测试1</p>
                     </a>    
                 </div> 
                 <div class="syled">
-                        <a type="button" href="{{ route('led.socketpython',2) }}"
+                        <a type="button" id="ledswitch_led2"
                         class="btn btn-success center-block btn-sm" 
                         aria-label="Left Align">
                         <p style="font-size:.2rem;">测试2</p>
                     </a>   
                 </div>    
                 <div class="syled">
-                        <a type="button" href="{{ route('led.socketpython',3) }}" 
+                        <a type="button" id="ledswitch_led3"
                         class="btn btn-success center-block btn-sm" 
                         aria-label="Left Align">
                         <p style="font-size:.2rem;">测试3</p>
