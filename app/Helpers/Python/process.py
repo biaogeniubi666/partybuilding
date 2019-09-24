@@ -13,7 +13,7 @@ import json
 import numpy
 
 import php_python
-import test_socket
+import test_socket  #具体的python脚本模块
 
 REQUEST_MIN_LEN = 10    #合法的request消息包最小长度    
 TIMEOUT = 180           #socket处理时间180秒
@@ -243,14 +243,14 @@ class ProcessThread(threading.Thread):
         #    4.结果返回给PHP
         #---------------------------------------------------
         retType = type(local_env['ret'])
-        print ("函数返回：%s" % retType)
+        # print ("函数返回：%s" % retType)  #测试语句
         rspStr = z_encode(local_env['ret'])  #函数结果组装为PHP序列化字符串
 
         try:  
             #加上成功前缀'S'
             rspStr = "S" + rspStr
             #调试
-            print ("返回包：%s" % rspStr)
+            # print ("返回包：%s" % rspStr)  #测试语句
             self._socket.sendall(rspStr.encode(php_python.CHARSET))
         except Exception as e:  
             print ('发送消息异常', e)
