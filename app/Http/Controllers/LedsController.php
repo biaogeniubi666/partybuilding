@@ -12,8 +12,9 @@ class LedsController extends Controller
     
     public function socketpython($id){
 
+        ppython("test_socket::get" , $controll_msg);
         $controll_msg = ledswitchAll($id);
-        ppython("test_socket::go" , $controll_msg);
+        ppython("test_socket::go" , $controll_test);
 
         return ;
     }
