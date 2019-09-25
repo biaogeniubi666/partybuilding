@@ -68,9 +68,7 @@ function socketphp ()
 function ledswitchAll($id) {
 
     if ($id == 0) {
-        return "----------------所有灯光------------------
-
-        ";
+        return 'con11111111';
     } elseif ($id == 1) {
         return "----------------第1组灯光------------------
 
