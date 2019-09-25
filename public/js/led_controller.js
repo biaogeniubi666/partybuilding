@@ -1,6 +1,6 @@
 $(function () {
 
-getdata();
+// getdata();
 
 document.getElementById("ledswitch_all").addEventListener("click",ledall);
 document.getElementById("ledswitch_led1").addEventListener("click",led1);
@@ -36,7 +36,6 @@ function led2() {
         url:'/socketpython/2',
         type:'get',
         success: function () {
-            getdata();
         },
         error : function() {
             alert("开关控制异常！");
@@ -49,7 +48,6 @@ function led3() {
         url:'/socketpython/3',
         type:'get',
         success: function () {
-            getdata();
         },
         error : function() {
             alert("开关控制异常！");
