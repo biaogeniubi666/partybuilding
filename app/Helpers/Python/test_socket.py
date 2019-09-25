@@ -1,2 +1,2 @@
-def  go(): 
-    print('connect success!')
+def  go(msg): 
+    print(msg)

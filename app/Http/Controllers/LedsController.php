@@ -8,14 +8,14 @@ use App\Models\LedStatus;
 
 class LedsController extends Controller
 {
-    public function socketphp(){
-        socketphp();
-        return redirect()->back();
-    }
+
     
-    public function socketpython(){
-        ppython("test_socket::go");
-        return redirect()->back();
+    public function socketpython($id){
+
+        $controll_msg = ledswitchAll($id);
+        ppython("test_socket::go" , $controll_msg);
+
+        return ;
     }
 
     public function update(){

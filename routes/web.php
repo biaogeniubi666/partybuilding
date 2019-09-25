@@ -20,8 +20,8 @@ Route::get('/', 'PagessController@index')->name('index');
 
 Route::get('/ledonoff', 'LedsController@update')->name('led.update');
 Route::get('/ledshow', 'LedsController@show')->name('led.show');
-Route::get('/socketphp', 'LedsController@socketphp')->name('led.socketphp');
-Route::get('/socketpython', 'LedsController@socketpython')->name('led.socketpython');
+
+Route::get('/socketpython/{id}', 'LedsController@socketpython')->name('led.socketpython');
 // Route::post('/ledonff', 'LedsController@update')->name('led.update');
 
 Route::get('/airdatashow','AirshowController@airdata')->name('airdata');

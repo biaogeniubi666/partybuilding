@@ -51,38 +51,37 @@
 
             <div class="boxall">
                 <div class="alltitle">总灯光控制</div>
-                <button type="button" class="btn btn-success btn-sm center-block" 
-                    aria-label="Left Align" id="ledonoff"
+                <a type="button" class="btn btn-success btn-sm center-block" 
+                    id="ledswitch_all"
+                    {{-- href="{{ route('led.socketpython',0) }}" --}}
+                    aria-label="Left Align"
                     style="padding-bottom: 0px; padding-top: 0px; margin-top: 0.2rem;">
                     <i class="far fa-lemon " aria-hidden="true"></i> 
                     <p style="font-size:.3rem;">总开关</p>
-                </button>
+                </a>
                 <div class="syled">
-                        <a type="button" href="{{ route('led.socketphp') }}" 
-                            class="btn btn-success center-block btn-sm" 
-                            aria-label="Left Align">
-                            <p style="font-size:.2rem;">测试1</p>
-                        </a>    
-                    </div> 
-                    <div class="syled">
-                            <a type="button" href="#" 
-                            class="btn btn-success center-block btn-sm" 
-                            aria-label="Left Align">
-                            <p style="font-size:.2rem;">带灯</p>
-                        </a>   
-                    </div>    
-                    <div class="syled">
-                            <a type="button" href="{{ route('led.socketpython') }}" 
-                            class="btn btn-success center-block btn-sm" 
-                            aria-label="Left Align">
-                            <p style="font-size:.2rem;">测试2</p>
-                        </a>   
-                    </div>
-                <div> 
-                
+                    <a type="button" id="ledswitch_led1"
+                        class="btn btn-success center-block btn-sm" 
+                        aria-label="Left Align">
+                        <p style="font-size:.2rem;">测试1</p>
+                    </a>    
+                </div> 
+                <div class="syled">
+                        <a type="button" id="ledswitch_led2"
+                        class="btn btn-success center-block btn-sm" 
+                        aria-label="Left Align">
+                        <p style="font-size:.2rem;">测试2</p>
+                    </a>   
+                </div>    
+                <div class="syled">
+                        <a type="button" id="ledswitch_led3"
+                        class="btn btn-success center-block btn-sm" 
+                        aria-label="Left Align">
+                        <p style="font-size:.2rem;">测试3</p>
+                    </a>   
                 </div>
             </div>
-
+        
             <div class="boxall" style="margin-bottom: 0px;">     
                 <div class="alltitle">灯光模拟输出</div>   
                 <div class="syled"><img id="led1" class="center-block img-thumbnail"></div> 
