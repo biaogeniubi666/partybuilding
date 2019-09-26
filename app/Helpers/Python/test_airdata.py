@@ -9,7 +9,7 @@ def go (port):
             self.port = port
             self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)    
             self.sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-            self.sock.bind(("172.16.85.52", port))
+            self.sock.bind(("172.16.85.52", self.port))
             self.sock.listen(0)
 
         def run(self):
@@ -21,3 +21,4 @@ def go (port):
 
     lst  = Listener(port)   # create a listen thread
     lst.start() # then start
+ 
