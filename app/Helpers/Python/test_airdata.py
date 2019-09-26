@@ -8,14 +8,14 @@ import socket
 encoding = 'utf-8'
 BUFSIZE = 1024
 
-def go ():
+def go (port):
     class Listener(threading.Thread):
         def __init__(self, port):
             threading.Thread.__init__(self)
             self.port = port
             self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)    
             self.sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-            self.sock.bind(("172.16.85.52", 11111))
+            self.sock.bind(("172.16.85.52", port))
             self.sock.listen(0)
 
         def run(self):
@@ -27,7 +27,7 @@ def go ():
                 print(client)
                 print("----------------------")
                 print("accept a connect")
-    lst  = Listener(11111)   # create a listen thread
+    lst  = Listener(port)   # create a listen thread
     lst.start() # then start
 
 
