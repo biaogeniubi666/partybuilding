@@ -65,22 +65,48 @@ function socketphp ()
     socket_close($sock);
 }
 
-function ledswitchAll($id) {
-
+function ledswitchAll($id, $led1, $led2, $led3) {
+    // 按下灯光总开关按钮的判断
     if ($id == 0) {
-        return 'con11111111';
-    } elseif ($id == 1) {
-        return "----------------第1组灯光------------------
-
-        ";
-    } elseif ($id == 2) {
-        return "----------------第2组灯光------------------
-        
-        ";
-    } elseif ($id == 3) {
-        return "----------------第3组灯光------------------
-
-        ";
+        if ($led1 ==0 & $led2 ==0 & $led3 ==0) {
+            $led1 = 1;
+            $led2 = 1;
+            $led3 = 1;
+        } else {
+            $led1 = 0;
+            $led2 = 0;
+            $led3 = 0;
+        }
     }
+    // 按下灯光1按钮的判断
+    elseif ($id == 1) {
+        if ($led1 ==0) {
+            $led1 = 1;
 
+        } else {
+            $led1 = 0;
+        }
+    } 
+    // 按下灯光2按钮的判断
+    elseif ($id == 2) {
+        if ($led2 ==0) {
+            $led2 = 1;
+
+        } else {
+            $led2 = 0;
+        }
+    } 
+    // 按下灯光3按钮的判断
+    elseif ($id == 3) {
+        if ($led3 ==0) {
+            $led3 = 1;
+
+        } else {
+            $led3 = 0;
+        }
+    }
+    $lednew = ['led1'=>$led1, 'led2'=>$led2, 'led3'=>$led3];
+    $con_data =  $led1 . $led2 . $led3 ;
+
+    return [$lednew, $con_data];
 }

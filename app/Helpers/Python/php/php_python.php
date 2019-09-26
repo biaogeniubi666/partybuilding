@@ -8,7 +8,7 @@
 
 define("LAJP_IP", "10.0.75.1");     
 
-//PHP端IP-位于php-fpm容器内，IP地址为172.25.0.5
+//          172.16.85.52          10.0.75.1
 //Python端IP-python端位于workspace容器IP地址172.25.0.4 主机地址10.0.75.1
 //由于新建镜像（dock-compose build）后再启动laradock容器可能会导致IP地址有变化
 //在主机内使用命令( dock network inspect "lardock-backend网络ID" ) 查看具体的IP地址
