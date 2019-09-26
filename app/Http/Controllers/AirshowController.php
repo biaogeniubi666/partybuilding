@@ -7,8 +7,9 @@ use APP\Models\Air;
 
 class AirshowController extends Controller
 {
+    
     public function airdata(){
-
+        // show
         $maxid = Air::max('id') - 10;
         $co2_forchart = Air::where('id', '>', $maxid)->pluck('CO2');
         $voc_forchart = Air::where('id', '>', $maxid)->pluck('VOC');
@@ -20,6 +21,12 @@ class AirshowController extends Controller
 
         return [$co2_forchart, $voc_forchart,
         $pm25_forchart, $ch2o_forchart, $humi, $temp];
+    }
+
+    public function update(){
+        // updata
+        $airavg = ppython("test_airdata::go", 12344);
+        
     }
        
 }
