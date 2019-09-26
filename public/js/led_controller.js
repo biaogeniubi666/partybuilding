@@ -1,15 +1,17 @@
 $(function () {
 
-getdata();
-document.getElementById("ledonoff").addEventListener("click",onoff);
 
 
-function onoff() {
+document.getElementById("ledswitch_all").addEventListener("click",ledall);
+document.getElementById("ledswitch_led1").addEventListener("click",led1);
+document.getElementById("ledswitch_led2").addEventListener("click",led2);
+document.getElementById("ledswitch_led3").addEventListener("click",led3);
+
+function ledall() {
     $.ajax({
-        url:'/ledonoff',
+        url:'/socketpython/0',
         type:'get',
-        success: function () {//result和data没关系
-            getdata();
+        success: function () {
         },
         error : function() {
             alert("开关控制异常！");
@@ -17,6 +19,41 @@ function onoff() {
     })
 }
 
+function led1() {
+    $.ajax({
+        url:'/socketpython/1',
+        type:'get',
+        success: function () {
+        },
+        error : function() {
+            alert("开关控制异常！");
+        }
+    })
+}
+
+function led2() {
+    $.ajax({
+        url:'/socketpython/2',
+        type:'get',
+        success: function () {
+        },
+        error : function() {
+            alert("开关控制异常！");
+        }
+    })
+}
+
+function led3() {
+    $.ajax({
+        url:'/socketpython/3',
+        type:'get',
+        success: function () {
+        },
+        error : function() {
+            alert("开关控制异常！");
+        }
+    })
+}
 
 function getdata(){
     $.ajax({

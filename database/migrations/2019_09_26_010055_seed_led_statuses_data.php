@@ -13,17 +13,28 @@ class SeedLedStatusesData extends Migration
      */
     public function up()
     {
-        // 初始化数据
         $ledstatuses = [
             [
-                'led1' => false,
-                'led2' => false,
-                'led3' => false,
+                'flag' => 'led',
+                'data' => 0b111,
+                'clientid' => 1,
+                'led1' => 1,
+                'led2' => 0,
+                'led3' => 1,
+            ],
+            [
+                'flag' => 'con',
+                'data' => 0b011,
+                'clientid' => 1,
+                'led1' => 1,
+                'led2' => 0,
+                'led3' => 1,
             ],
         ];
+
         DB::table('led_statuses')->insert($ledstatuses);
     }
-
+    
     /**
      * Reverse the migrations.
      *

@@ -15,10 +15,14 @@ class CreateLedStatusesTable extends Migration
     {
         Schema::create('led_statuses', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('flag');
+            $table->integer('data');
+            $table->integer('clientid');
             $table->boolean('led1');
             $table->boolean('led2');
             $table->boolean('led3');
-            $table->timestamps();
+            $table->string('remakes')->nullable();
+            $table->nullableTimestamps();
         });
     }
 
