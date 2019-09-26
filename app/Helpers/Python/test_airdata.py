@@ -2,6 +2,7 @@ import socket
 import threading
 
 def go (port):
+    port = port
     class Listener(threading.Thread):
         def __init__(self, port):
             threading.Thread.__init__(self)
@@ -18,5 +19,5 @@ def go (port):
                 print("accept a connect")    
                 print(request,addr)  
 
-    lst = Listener(port)
-    lst.start();
+    lst  = Listener(port)   # create a listen thread
+    lst.start() # then start
