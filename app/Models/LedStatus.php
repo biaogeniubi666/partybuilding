@@ -7,6 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class LedStatus extends Model
 {
     protected $fillable = [
-        'led1', 'led2', 'led3'
+        'id', 'flag', 'data', 'cliendid', 'led1', 'led2', 'led3', 'remakes'
     ];
 }
