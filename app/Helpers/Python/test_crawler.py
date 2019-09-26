@@ -23,7 +23,7 @@ class Reader(threading.Thread):
                   print("----------------------------")
                   d={}
                   connection = pymysql.connect(host="47.96.18.108",port=3306,user="root",passwd="root",db="default" )
-                  wangzhi="https://www.jb51.net/article/148183.htm"
+                #   wangzhi="https://www.jb51.net/article/148183.htm"
                   Clientid=strs[40:49]
                   strs_for_json = strs[55:]
                   strs_for_json= strs_for_json[:-9]
@@ -49,7 +49,7 @@ class Reader(threading.Thread):
                   break
           print("close:", self.client.getpeername() )
       def readline(self):
-          rec =self.inputs.readline()
+          rec =self.client.readline()
           if rec:
               string = bytes.decode(rec, encoding)
               if len(string)>2:
@@ -64,21 +64,20 @@ class Listener(threading.Thread):
       def __init__(self, port):
           threading.Thread.__init__(self)
           self.port = port
-          self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+          self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)    
           self.sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
           self.sock.bind(("172.16.85.52", port))
           self.sock.listen(0)
+
       def run(self):
           print("listener started")
-
-
           while True:
-              client, cltadd = self.sock.accept()
-              Reader(client).start()
-              cltadd = cltadd
+            client, cltadd = self.sock.accept()
+            Reader(client).start()
+            cltadd = cltadd
 
-              print(cltadd)
-              print("accept a connect")
+            print(cltadd)
+            print("accept a connect")
 
 lst  = Listener(12345)   # create a listen thread
 lst.start() # then start
