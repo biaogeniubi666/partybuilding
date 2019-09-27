@@ -31,10 +31,9 @@ class LedsController extends Controller
 
     public function show(){
 
-        // $led = LedStatus::find(1);
-        // $con = array(ledswitchAll(1,$led->led1, $led->led2, $led->led3));
-        // return $con[0][1];
-        $airavg = ppython2("test_airdata::go");
-        return $airavg;
+        $led = LedStatus::find(1);
+    
+        return [$led->led1, $led->led2, $led->led3];
+  
     }
 }
