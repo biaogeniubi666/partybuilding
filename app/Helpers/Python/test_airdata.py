@@ -1,6 +1,5 @@
-# import socket
+import socket
 def  go(): 
-   
     try:
         s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
         s.connect(('47.96.18.108',11111))
