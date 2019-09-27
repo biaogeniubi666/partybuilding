@@ -679,8 +679,6 @@ function echarts_6(resultdata) {
         yAxis: [{
             type: 'value',
             axisTick: {show: false},
-            min:0,
-            max:150,
             axisLine: {
                 lineStyle: {
                     color: 'rgba(255,255,255,.1)'
