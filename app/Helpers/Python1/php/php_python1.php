@@ -6,20 +6,21 @@
 // License: http://www.apache.org/licenses/LICENSE-2.0
 //-----------------------------------------------------------
 
-define("LAJP_IP", "172.16.85.52");     
-
+   
+define("LAJP_PORT_1", 12345);         //Python端侦听端口,对应php_python.py的端口
+define("LAJP_IP_1", "172.16.85.52");  
 //          172.16.85.52          10.0.75.1
 //Python端IP-python端位于workspace容器IP地址172.25.0.4 主机地址10.0.75.1
 //由于新建镜像（dock-compose build）后再启动laradock容器可能会导致IP地址有变化
 //在主机内使用命令( dock network inspect "lardock-backend网络ID" ) 查看具体的IP地址
 
-define("LAJP_PORT", 11111);         //Python端侦听端口,对应php_python.py的端口
 
-define("PARAM_TYPE_ERROR", 101);    //参数类型错误
-define("SOCKET_ERROR", 102);        //SOCKET错误
-define("LAJP_EXCEPTION", 104);      //Python端反馈异常
 
-function ppython2()
+define("PARAM_TYPE_ERROR_1", 101);    //参数类型错误
+define("SOCKET_ERROR_1", 102);        //SOCKET错误
+define("LAJP_EXCEPTION_1_1", 104);      //Python端反馈异常
+
+function ppython1()
 {
     //参数数量
     $args_len = func_num_args();
@@ -29,23 +30,23 @@ function ppython2()
     //参数数量不能小于1
     if ($args_len < 1)
     {
-        throw new Exception("[PPython Error] lapp_call function's arguments length < 1", PARAM_TYPE_ERROR);
+        throw new Exception("[PPython Error] lapp_call function's arguments length < 1", PARAM_TYPE_ERROR_1);
     }
 
     //第一个参数是Python模块函数名称，必须是string类型
     if (!is_string($arg_array[0]))
     {
-        throw new Exception("[PPython Error] lapp_call function's first argument must be string \"module_name::function_name\".", PARAM_TYPE_ERROR);
+        throw new Exception("[PPython Error] lapp_call function's first argument must be string \"module_name::function_name\".", PARAM_TYPE_ERROR_1);
     }
     
     if (($socket = socket_create(AF_INET, SOCK_STREAM, 0)) === false)
     {
-        throw new Exception("[PPython Error] socket create error.", SOCKET_ERROR);
+        throw new Exception("[PPython Error] socket create error.", SOCKET_ERROR_1);
     }
 
-    if (socket_connect($socket, LAJP_IP, LAJP_PORT) === false)
+    if (socket_connect($socket, LAJP_IP_1, LAJP_PORT_1) === false)
     {
-        throw new Exception("[PPython Error] socket connect error.", SOCKET_ERROR);
+        throw new Exception("[PPython Error] socket connect error.", SOCKET_ERROR_1);
     }
 
     //消息体序列化
@@ -62,7 +63,7 @@ function ppython2()
         //发送
         if (($sends = socket_write($socket, $request, strlen($request))) === false)
         {
-            throw new Exception("[PPython Error] socket write error.", SOCKET_ERROR);
+            throw new Exception("[PPython Error] socket write error.", SOCKET_ERROR_1);
         }
 
         $send_len += $sends;
@@ -77,7 +78,7 @@ function ppython2()
         $recv = "";
         if (($recv = socket_read($socket, 1400)) === false)
         {
-            throw new Exception("[PPython Error] socket read error.", SOCKET_ERROR);
+            throw new Exception("[PPython Error] socket read error.", SOCKET_ERROR_1);
         }
         if ($recv == "")
         {
@@ -101,7 +102,7 @@ function ppython2()
     if ($rsp_stat == "F")
     {
         //异常信息不用反序列化
-        throw new Exception("[PPython Error] Receive Python exception: ".$rsp_msg, LAJP_EXCEPTION);
+        throw new Exception("[PPython Error] Receive Python exception: ".$rsp_msg, LAJP_EXCEPTION_1);
     }
     else
     {
