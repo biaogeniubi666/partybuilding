@@ -43,7 +43,8 @@
         ],
         "files":[
             "app/Helpers/helpers.php",
-            "app/Helpers/Python12345/php/php_python.php"
+            "app/Helpers/Python1/php/php_python1.php",
+            "app/Helpers/Python2/php/php_python2.php"
         ]
     },
     "autoload-dev": {
