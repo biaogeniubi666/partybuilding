@@ -53,26 +53,31 @@ function echarts_1(resultdata) {
             containLabel: true
         },
 
+        
         xAxis: [{
             type: 'category',
-            boundaryGap: false,
-            axisLabel:  {
-                textStyle: {
-                    color: "rgba(255,255,255,.6)",
-                    fontSize:12,
+            data: ['10', '9', '8', '7', '6', '5', '4', '3', '2', '1'],
+            axisLine: {
+                show: true,
+             lineStyle: {
+                    color: "rgba(255,255,255,.1)",
+                    width: 1,
+                    type: "solid"
                 },
             },
-            axisLine: {
-                lineStyle: { 
-                    color: 'rgba(255,255,255,.2)'
-                }
+            axisTick: {
+                show: false,
             },
-            data: ['10', '9', '8', '7', '6', '5', '4', '3', '2', '1']
-        }, {
-            axisPointer: {show: false},
-            axisLine: {  show: false},
-            position: 'bottom',
-            offset: 20,
+            axisLabel:  {
+                    interval: 0,
+                   // rotate:50,
+                    show: true,
+                    splitNumber: 15,
+                    textStyle: {
+                         color: "rgba(255,255,255,.6)",
+                        fontSize: '12',
+                    },
+                },
         }],
 
         yAxis: [{
@@ -186,31 +191,34 @@ function echarts_2(resultdata) {
         xAxis: [{
             type: 'category',
             data: ['10', '9', '8', '7', '6', '5', '4', '3', '2', '1'],
-            axisTick: {show: false},
-            axisLabel:  {
-                textStyle: {
-                    color: "rgba(255,255,255,.6)",
-                    fontSize:12,
+            axisLine: {
+                show: true,
+             lineStyle: {
+                    color: "rgba(255,255,255,.1)",
+                    width: 1,
+                    type: "solid"
                 },
             },
-            axisLine: {
-                lineStyle: { 
-                    color: 'rgba(255,255,255,.2)'
-                }
+            axisTick: {
+                show: false,
             },
-            
-        }, {
-            axisPointer: {show: false},
-            axisLine: {  show: false},
-            position: 'bottom',
-            offset: 20,
+            axisLabel:  {
+                    interval: 0,
+                   // rotate:50,
+                    show: true,
+                    splitNumber: 15,
+                    textStyle: {
+                         color: "rgba(255,255,255,.6)",
+                        fontSize: '12',
+                    },
+                },
         }],
     
         yAxis: [{
             type: 'value',
             axisTick: {show: false},
             min:0,
-            max:0.5,
+            max:400,
             axisLine: {
                 lineStyle: {
                     color: 'rgba(255,255,255,.1)'
@@ -645,26 +653,34 @@ function echarts_6(resultdata) {
         xAxis: [{
             type: 'category',
             data: ['10', '9', '8', '7', '6', '5', '4', '3', '2', '1'],
-            axisTick: {show: false},
-            axisLabel:  {
-                textStyle: {
-                    color: "rgba(255,255,255,.6)",
-                    fontSize:12,
+            axisLine: {
+                show: true,
+             lineStyle: {
+                    color: "rgba(255,255,255,.1)",
+                    width: 1,
+                    type: "solid"
                 },
             },
-            axisLine: {
-                lineStyle: { 
-                    color: 'rgba(255,255,255,.2)'
-                }
+            axisTick: {
+                show: false,
             },
-            
+            axisLabel:  {
+                    interval: 0,
+                   // rotate:50,
+                    show: true,
+                    splitNumber: 15,
+                    textStyle: {
+                         color: "rgba(255,255,255,.6)",
+                        fontSize: '12',
+                    },
+                },
         }],
     
         yAxis: [{
             type: 'value',
             axisTick: {show: false},
             min:0,
-            max:0.1,
+            max:150,
             axisLine: {
                 lineStyle: {
                     color: 'rgba(255,255,255,.1)'
