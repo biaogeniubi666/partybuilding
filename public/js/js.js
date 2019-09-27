@@ -217,8 +217,6 @@ function echarts_2(resultdata) {
         yAxis: [{
             type: 'value',
             axisTick: {show: false},
-            min:0,
-            max:400,
             axisLine: {
                 lineStyle: {
                     color: 'rgba(255,255,255,.1)'
@@ -519,12 +517,14 @@ function echarts_5(resultdata) {
         }],
 
         yAxis: {
+            min:0,
+            max:70,
             axisLabel: {
                 //formatter: '{value} %'
                  show:true,
                   textStyle: {
-                          color: "rgba(255,255,255,.6)",
-                         fontSize: '12',
+                        color: "rgba(255,255,255,.6)",
+                        fontSize: '12',
                      },
              },
              axisTick: {
