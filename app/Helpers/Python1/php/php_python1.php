@@ -8,7 +8,7 @@
 
    
 define("LAJP_PORT_1", 12345);         //Python端侦听端口,对应php_python.py的端口
-define("LAJP_IP_1", "10.0.75.1");  
+define("LAJP_IP_1", "172.16.85.52");  
 //          172.16.85.52          10.0.75.1
 //Python端IP-python端位于workspace容器IP地址172.25.0.4 主机地址10.0.75.1
 //由于新建镜像（dock-compose build）后再启动laradock容器可能会导致IP地址有变化
