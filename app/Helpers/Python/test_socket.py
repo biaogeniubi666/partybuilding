@@ -12,7 +12,8 @@ def  go(msg):
         s.connect(('47.96.18.108',12346))
         bmsg=bytes(msg,"ascii")
         s.send(bmsg)
-        
+        print('已发送控制指令') 
+
         print(s.recv(1024))
         s.send(b'exit')
     except:

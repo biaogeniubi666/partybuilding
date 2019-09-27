@@ -6,20 +6,20 @@
 // License: http://www.apache.org/licenses/LICENSE-2.0
 //-----------------------------------------------------------
 
-define("LAJP_IP", "10.0.75.1");     
+define("LAJP_IP", "172.16.85.52");     
 
 //          172.16.85.52          10.0.75.1
 //Python端IP-python端位于workspace容器IP地址172.25.0.4 主机地址10.0.75.1
 //由于新建镜像（dock-compose build）后再启动laradock容器可能会导致IP地址有变化
 //在主机内使用命令( dock network inspect "lardock-backend网络ID" ) 查看具体的IP地址
 
-define("LAJP_PORT", 12345);         //Python端侦听端口,对应php_python.py的端口
+define("LAJP_PORT", 11111);         //Python端侦听端口,对应php_python.py的端口
 
 define("PARAM_TYPE_ERROR", 101);    //参数类型错误
 define("SOCKET_ERROR", 102);        //SOCKET错误
 define("LAJP_EXCEPTION", 104);      //Python端反馈异常
 
-function ppython()
+function ppython2()
 {
     //参数数量
     $args_len = func_num_args();

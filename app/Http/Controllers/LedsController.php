@@ -34,7 +34,7 @@ class LedsController extends Controller
         // $led = LedStatus::find(1);
         // $con = array(ledswitchAll(1,$led->led1, $led->led2, $led->led3));
         // return $con[0][1];
-        $airavg = ppython("test_airdata::go", 11111);
+        $airavg = ppython2("test_airdata::go",'test1');
         return $airavg;
     }
 }
