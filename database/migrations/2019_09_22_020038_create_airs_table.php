@@ -15,7 +15,7 @@ class CreateAirsTable extends Migration
             $table->float('hum', 8, 2);
             $table->float('pm25', 8, 2);
             $table->float('ch2o', 8, 2);
-            $table->timestamps();
+            $table->nullabletimestamps();
         });
 	}
 

@@ -55,6 +55,7 @@ function echarts_1(resultdata) {
 
         xAxis: [{
             type: 'category',
+            name:"分钟前",
             data: ['5', '4', '3', '2', '1'],
             axisLine: {
                 show: true,
@@ -81,6 +82,7 @@ function echarts_1(resultdata) {
 
         yAxis: [{
             type: 'value',
+            name:"PPB",
             axisTick: {show: false},
             min:600,
             max:2000,
@@ -189,6 +191,7 @@ function echarts_2(resultdata) {
     
         xAxis: [{
             type: 'category',
+            name:"分钟前",
             data: ['5', '4', '3', '2', '1'],
             axisLine: {
                 show: true,
@@ -215,6 +218,7 @@ function echarts_2(resultdata) {
     
         yAxis: [{
             type: 'value',
+            name:"PPB",
             max:750,
             axisTick: {show: false},
             axisLine: {
@@ -494,6 +498,7 @@ function echarts_5(resultdata) {
 
         xAxis: [{
             type: 'category',
+            name:"分钟前",
             data: ['5', '4', '3', '2', '1'],
             axisLine: {
                 show: true,
@@ -519,6 +524,7 @@ function echarts_5(resultdata) {
         }],
 
         yAxis: {
+            name:"μg/m3",
             min:0,
             max:90,
             axisLabel: {
@@ -653,6 +659,11 @@ function echarts_6(resultdata) {
         },
     
         xAxis: [{
+            name:"分钟前",
+            nameTextStyle:{
+                color: '#fff',
+                fontSize: 10,
+            },
             type: 'category',
             data: ['5', '4', '3', '2', '1'],
             axisLine: {
@@ -675,10 +686,11 @@ function echarts_6(resultdata) {
                          color: "rgba(255,255,255,.6)",
                         fontSize: '12',
                     },
-                },
+            },
         }],
     
         yAxis: [{
+            name:"浓度",
             type: 'value',
             axisTick: {show: false},
             axisLine: {
@@ -688,9 +700,10 @@ function echarts_6(resultdata) {
             },
            axisLabel:  {
                 textStyle: {
-                        color: "rgba(255,255,255,.6)",
+                    color: "rgba(255,255,255,.6)",
                     fontSize:12,
                 },
+                formatter: '{value} ppm',
             },
             splitArea:{
                 show:false,
