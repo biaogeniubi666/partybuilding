@@ -48,12 +48,11 @@ function echarts_1(resultdata) {
         grid: {
             left: '0%',
             top: '10%',
-            right: '20%',
+            right: '10%',
             bottom: '3%',
             containLabel: true
         },
 
-        
         xAxis: [{
             type: 'category',
             data: ['5', '4', '3', '2', '1'],
@@ -83,8 +82,8 @@ function echarts_1(resultdata) {
         yAxis: [{
             type: 'value',
             axisTick: {show: false},
-            min:200,
-            max:1000,
+            min:600,
+            max:2000,
             axisLine: {
                 lineStyle: {
                     color: 'rgba(255,255,255,.1)'
@@ -139,11 +138,11 @@ function echarts_1(resultdata) {
                         formatter: '{b}'
                     },
                     data: [{
-                        name: '健康范围',
-                        yAxis: 800
+                        name: '中',
+                        yAxis: 2000
                     }, {
-                        name: '健康范围',
-                        yAxis: 400
+                        name: '优',
+                        yAxis: 1000
                     }],
                     lineStyle:{
                         color:'#8E8E8E',
@@ -183,7 +182,7 @@ function echarts_2(resultdata) {
         grid: {
             left: '0%',
             top: '10%',
-            right: '20%%',
+            right: '10%',
             bottom: '3%',
             containLabel: true
         },
@@ -216,6 +215,7 @@ function echarts_2(resultdata) {
     
         yAxis: [{
             type: 'value',
+            max:750,
             axisTick: {show: false},
             axisLine: {
                 lineStyle: {
@@ -245,7 +245,7 @@ function echarts_2(resultdata) {
             name: '可挥发化合物VOC',
             type: 'bar',
             data: resultdata,
-            barWidth:'30%', //柱子宽度
+            barWidth:'50%', //柱子宽度
             itemStyle: {
                 normal: {
                     color:'#00B2EE',
@@ -262,11 +262,11 @@ function echarts_2(resultdata) {
                     formatter: '{b}'
                 },
                 data: [{
-                    name: '健康范围',
-                    yAxis: 0.3
+                    name: '中',
+                    yAxis: 700
                 }, {
-                    name: '健康范围',
-                    yAxis: 0.0
+                    name: '优',
+                    yAxis: 600
                 }],
                 lineStyle:{
                     color:'#8E8E8E',
@@ -284,7 +284,7 @@ function echarts_2(resultdata) {
 function echarts_3(resultdata) {
     // 基于准备好的dom，初始化echarts实例
     var myChart = echarts.init(document.getElementById('echart3'));
-
+    var fuhao = "%";
     option = {
         grid: {
             left: '5%',
@@ -309,7 +309,7 @@ function echarts_3(resultdata) {
                 radius: '90%',
                 axisLine: {            // 坐标轴线
                     lineStyle: {       // 属性lineStyle控制线条样式
-                        color: [[0.6, '#436EEE'],[0.8, 'lime'],[1, '#ff4500']],
+                        color: [[0.3, '#ff4500'],[0.75, 'lime'],[1,'#436EEE']],
                         width: 5,
                         shadowColor : '#fff', //默认透明
                         shadowBlur: 1
@@ -345,7 +345,8 @@ function echarts_3(resultdata) {
                     shadowBlur: 5
                 },
                 title : {
-                    textStyle: {       // 其余属性默认使用全局文本样式，详见TEXTSTYLE
+                    textStyle: {       
+                        // 表盘中央符号的设置，其余属性默认使用全局文本样式，详见TEXTSTYLE
                         fontWeight: 'bolder',
                         fontSize: 20,
                         fontStyle: 'italic',
@@ -361,11 +362,11 @@ function echarts_3(resultdata) {
                     offsetCenter: [0, '50%'],       // x, y，单位px
                     textStyle: {       // 其余属性默认使用全局文本样式，详见TEXTSTYLE
                         fontWeight: 'bolder',
-                        fontSize: 12,
+                        fontSize: 15,
                         color: '#FCFCFC'
                     }
                 },
-                data:[{value: resultdata, name: '%'}]
+                data:[{value: resultdata}]
             }]
     };
 
@@ -404,7 +405,7 @@ var myChart = echarts.init(document.getElementById('echart4'));
             radius: '90%',
             axisLine: {            // 坐标轴线
                 lineStyle: {       // 属性lineStyle控制线条样式
-                    color: [[0.35, '#436EEE'],[0.45, 'lime'],[1, '#ff4500']],
+                    color: [[0.4, '#436EEE'],[0.52, 'lime'],[1, '#ff4500']],
                     width: 5,
                     shadowColor : '#fff', //默认透明
                     shadowBlur: 1
@@ -456,12 +457,13 @@ var myChart = echarts.init(document.getElementById('echart4'));
                 offsetCenter: [0, '50%'],       // x, y，单位px
                 textStyle: {       // 其余属性默认使用全局文本样式，详见TEXTSTYLE
                     fontWeight: 'bolder',
-                    fontSize: 12,
+                    fontSize: 15,
                     color: '#FCFCFC',
                     
                 }
             },
-            data:[{value: resultdata, name: '℃'}]
+            // data:[{value: resultdata, name: '℃'}]
+            data:[{value: resultdata}]
         }]
     };
   
@@ -481,7 +483,7 @@ function echarts_5(resultdata) {
         grid: {
             left: '0%',
             top:'10px',
-            right: '20%',
+            right: '10%',
             bottom: '3%',
            containLabel: true
         },
@@ -518,7 +520,7 @@ function echarts_5(resultdata) {
 
         yAxis: {
             min:0,
-            max:70,
+            max:90,
             axisLabel: {
                 //formatter: '{value} %'
                  show:true,
@@ -578,7 +580,7 @@ function echarts_5(resultdata) {
         },
 
         series: [{
-            name: 'Beijing AQI',
+            name: 'PM25',
             type: 'line',
             data: resultdata,
 
@@ -645,7 +647,7 @@ function echarts_6(resultdata) {
         grid: {
             left: '0%',
             top: '10%',
-            right: '20%',
+            right: '10%',
             bottom: '3%',
             containLabel: true
         },
@@ -724,11 +726,11 @@ function echarts_6(resultdata) {
                     formatter: '{b}'
                 },
                 data: [{
-                    name: '健康范围',
-                    yAxis: 0.08
+                    name: '中',
+                    yAxis: 300
                 }, {
-                    name: '健康范围',
-                    yAxis: 0.0
+                    name: '优',
+                    yAxis: 80
                 }],
                 lineStyle:{
                     color:'#8E8E8E',
