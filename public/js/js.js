@@ -56,7 +56,7 @@ function echarts_1(resultdata) {
         
         xAxis: [{
             type: 'category',
-            data: ['10', '9', '8', '7', '6', '5', '4', '3', '2', '1'],
+            data: ['5', '4', '3', '2', '1'],
             axisLine: {
                 show: true,
              lineStyle: {
@@ -190,7 +190,7 @@ function echarts_2(resultdata) {
     
         xAxis: [{
             type: 'category',
-            data: ['10', '9', '8', '7', '6', '5', '4', '3', '2', '1'],
+            data: ['5', '4', '3', '2', '1'],
             axisLine: {
                 show: true,
              lineStyle: {
@@ -492,7 +492,7 @@ function echarts_5(resultdata) {
 
         xAxis: [{
             type: 'category',
-            data: ['10', '9', '8', '7', '6', '5', '4', '3', '2', '1'],
+            data: ['5', '4', '3', '2', '1'],
             axisLine: {
                 show: true,
              lineStyle: {
@@ -652,7 +652,7 @@ function echarts_6(resultdata) {
     
         xAxis: [{
             type: 'category',
-            data: ['10', '9', '8', '7', '6', '5', '4', '3', '2', '1'],
+            data: ['5', '4', '3', '2', '1'],
             axisLine: {
                 show: true,
              lineStyle: {
@@ -704,13 +704,13 @@ function echarts_6(resultdata) {
         }],
         
         series: [{
-            name: '甲醛浓度 毫克/每立方',
+            name: '甲醛浓度',
             type: 'bar',
             data: resultdata,
-            barWidth:'30%', //柱子宽度
+            barWidth:'50%', //柱子宽度
             itemStyle: {
                 normal: {
-                    color:'#FFE74C',
+                    color:'#F3944C',
                     opacity: 1,
                     barBorderRadius: 5,
                 }

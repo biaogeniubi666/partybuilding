@@ -10,7 +10,7 @@ class AirshowController extends Controller
     
     public function airdata(){
         // show
-        $maxid = Air::max('id') - 10;
+        $maxid = Air::max('id') - 5;
         $co2_forchart = Air::where('id', '>', $maxid)->pluck('CO2');
         $voc_forchart = Air::where('id', '>', $maxid)->pluck('VOC');
         $pm25_forchart = Air::where('id', '>', $maxid)->pluck('PM25');
