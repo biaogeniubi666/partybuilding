@@ -11,6 +11,7 @@ class AirsTableSeeder extends Seeder
         ->times(50)
         ->make();
         
+        // DB::table('temporaries')->insert($temporaries);
         Air::insert($airs->toArray());
     }
 
