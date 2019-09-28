@@ -47,15 +47,21 @@ function echarts_1(resultdata) {
 
         grid: {
             left: '0%',
-            top: '10%',
+            top: '13%',
             right: '10%',
-            bottom: '3%',
+            bottom: '7%',
             containLabel: true
         },
 
         xAxis: [{
-            type: 'category',
             name:"分钟前",
+            nameLocation:'center',
+            nameGap:23,
+            nameTextStyle:{
+                color:  "rgba(255,255,255,.6)",
+                fontSize: 12,
+            },
+            type: 'category',
             data: ['5', '4', '3', '2', '1'],
             axisLine: {
                 show: true,
@@ -81,8 +87,12 @@ function echarts_1(resultdata) {
         }],
 
         yAxis: [{
+            name:"浓度:PPM",
+            nameTextStyle:{
+                color:  "rgba(255,255,255,.6)",
+                fontSize: 12,
+            },
             type: 'value',
-            name:"PPB",
             axisTick: {show: false},
             min:600,
             max:2000,
@@ -183,15 +193,21 @@ function echarts_2(resultdata) {
 
         grid: {
             left: '0%',
-            top: '10%',
+            top: '13%',
             right: '10%',
-            bottom: '3%',
+            bottom: '7%',
             containLabel: true
         },
     
         xAxis: [{
-            type: 'category',
             name:"分钟前",
+            nameLocation:'center',
+            nameGap:23,
+            nameTextStyle:{
+                color:  "rgba(255,255,255,.6)",
+                fontSize: 12,
+            },
+            type: 'category',
             data: ['5', '4', '3', '2', '1'],
             axisLine: {
                 show: true,
@@ -217,8 +233,12 @@ function echarts_2(resultdata) {
         }],
     
         yAxis: [{
+            name:"浓度:PPB",
+            nameTextStyle:{
+                color:  "rgba(255,255,255,.6)",
+                fontSize: 12,
+            },
             type: 'value',
-            name:"PPB",
             max:750,
             axisTick: {show: false},
             axisLine: {
@@ -304,7 +324,7 @@ function echarts_3(resultdata) {
 
         series: [
             {
-                name:'速度',
+                name:'湿度',
                 type:'gauge',
                 min:0,
                 max:99,
@@ -486,10 +506,10 @@ function echarts_5(resultdata) {
 
         grid: {
             left: '0%',
-            top:'10px',
+            top: '13%',
             right: '10%',
-            bottom: '3%',
-           containLabel: true
+            bottom: '7%',
+            containLabel: true
         },
 
         tooltip: {
@@ -497,8 +517,14 @@ function echarts_5(resultdata) {
         },
 
         xAxis: [{
-            type: 'category',
             name:"分钟前",
+            nameLocation:'center',
+            nameGap:23,
+            nameTextStyle:{
+                color:  "rgba(255,255,255,.6)",
+                fontSize: 12,
+            },
+            type: 'category',
             data: ['5', '4', '3', '2', '1'],
             axisLine: {
                 show: true,
@@ -525,6 +551,10 @@ function echarts_5(resultdata) {
 
         yAxis: {
             name:"μg/m3",
+            nameTextStyle:{
+                color:  "rgba(255,255,255,.6)",
+                fontSize: 12,
+            },
             min:0,
             max:90,
             axisLabel: {
@@ -652,17 +682,19 @@ function echarts_6(resultdata) {
 
         grid: {
             left: '0%',
-            top: '10%',
+            top: '13%',
             right: '10%',
-            bottom: '3%',
+            bottom: '7%',
             containLabel: true
         },
     
         xAxis: [{
             name:"分钟前",
+            nameLocation:'center',
+            nameGap:23,
             nameTextStyle:{
-                color: '#fff',
-                fontSize: 10,
+                color:  "rgba(255,255,255,.6)",
+                fontSize: 12,
             },
             type: 'category',
             data: ['5', '4', '3', '2', '1'],
@@ -681,7 +713,6 @@ function echarts_6(resultdata) {
                     interval: 0,
                    // rotate:50,
                     show: true,
-                    splitNumber: 15,
                     textStyle: {
                          color: "rgba(255,255,255,.6)",
                         fontSize: '12',
@@ -690,7 +721,11 @@ function echarts_6(resultdata) {
         }],
     
         yAxis: [{
-            name:"浓度",
+            name:"浓度:PPB",
+            nameTextStyle:{
+                color:  "rgba(255,255,255,.6)",
+                fontSize: 12,
+            },
             type: 'value',
             axisTick: {show: false},
             axisLine: {
@@ -703,7 +738,7 @@ function echarts_6(resultdata) {
                     color: "rgba(255,255,255,.6)",
                     fontSize:12,
                 },
-                formatter: '{value} ppm',
+                formatter: '{value}',
             },
             splitArea:{
                 show:false,
