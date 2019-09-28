@@ -4,6 +4,7 @@ namespace App\Console;
 
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
+use Illuminate\Support\Facades\DB; 
 use App\Models\Temporary;
 use App\Models\Air;
 
@@ -45,8 +46,10 @@ class Kernel extends ConsoleKernel
             'ch2o' => $ch2o
             ];
 
-            Air::insert($airs);
-
+            // Air::cerate($airs);
+            DB::table('airs')->insert($airs);
+            // Air::insert($airs->toArray());
+            
         });
     }
 
