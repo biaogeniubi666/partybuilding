@@ -18,7 +18,7 @@ class LedsController extends Controller
         $con_data = $con[0][1];
         ppython1("test_socket::go" , 'con' . $con_data);
 
-        //test 更新
+        //test 更新ledflag
         $led -> update($con[0][0]);
     }
 

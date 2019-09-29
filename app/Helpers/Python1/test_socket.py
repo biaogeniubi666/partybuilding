@@ -12,9 +12,6 @@ def  go(msg):
         bmsg=bytes(msg,"ascii")
         s.send(bmsg)
         print('已发送控制指令') 
-
-        print(s.recv(1024))
-        s.send(b'exit')
     except:
         pass
 
