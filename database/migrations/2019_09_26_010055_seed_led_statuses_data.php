@@ -19,8 +19,8 @@ class SeedLedStatusesData extends Migration
                 'data' => 0b111,
                 'clientid' => 1,
                 'ch1' => 1,
-                'ch2' => 0,
-                'ch3' => 1,
+                'ch2' => 1,
+                'ch3' => 0,
             ],
             [
                 'flag' => 'con',

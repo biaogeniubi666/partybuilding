@@ -33,7 +33,8 @@ function echarts_1(resultdata) {
             lineStyle: {
                 color: '#00B2EE'
                 }
-            }
+            },
+        formatter: '{a0}: {c0}',
         },
 
         legend: {

@@ -46,10 +46,20 @@ class Kernel extends ConsoleKernel
             'ch2o' => $ch2o
             ];
 
+            $temporaries = [
+                'voc' => randomFloat(220, 260),
+                'tem' => randomFloat(20, 33),
+                'hum' => randomFloat(45, 70),
+                'pm25' => randomFloat(15, 60),
+                'ch2o' => randomFloat(20, 60),
+            ];
+
             // Air::cerate($airs);
             DB::table('airs')->insert($airs);
             // Air::insert($airs->toArray());
             
+            DB::table('temporaries')->insert($temporaries);
+
         });
     }
 
