@@ -20,7 +20,7 @@ class LedsController extends Controller
 
         //test 更新ledflag
         $led -> update($con[0][0]);
-        return [$con];
+        return $con[0][0];
     }
 
     public function update(){
