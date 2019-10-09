@@ -72,41 +72,46 @@ function ledswitchAll($id, $led1, $led2, $led3) {
             $led1 = 1;
             $led2 = 1;
             $led3 = 1;
+            $switch = "allon";
         } else {
             $led1 = 0;
             $led2 = 0;
             $led3 = 0;
+            $switch = "alloff";
         }
     }
     // 按下灯光1按钮的判断
     elseif ($id == 1) {
         if ($led1 ==0) {
             $led1 = 1;
-
+            $switch = "ch" . $id . "on";
         } else {
             $led1 = 0;
+            $switch = "ch" . $id . "off";
         }
     } 
     // 按下灯光2按钮的判断
     elseif ($id == 2) {
         if ($led2 ==0) {
             $led2 = 1;
-
+            $switch = "ch" . $id . "on";
         } else {
             $led2 = 0;
+            $switch = "ch" . $id . "off";
         }
     } 
     // 按下灯光3按钮的判断
     elseif ($id == 3) {
         if ($led3 ==0) {
             $led3 = 1;
-
+            $switch = "ch" . $id . "on";
         } else {
             $led3 = 0;
+            $switch = "ch" . $id . "off";
         }
     }
     $lednew = ['led1'=>$led1, 'led2'=>$led2, 'led3'=>$led3];
-    $con_data =  $led1 . $led2 . $led3 ;
+    $con_data =  $switch ;
 
     return [$lednew, $con_data];
 }
