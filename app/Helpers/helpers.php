@@ -110,7 +110,7 @@ function ledswitchAll($id, $led1, $led2, $led3) {
             $switch = "ch" . $id . "off";
         }
     }
-    $lednew = ['led1'=>$led1, 'led2'=>$led2, 'led3'=>$led3];
+    $lednew = ['ch1'=>$led1, 'ch2'=>$led2, 'ch3'=>$led3];
     $con_data =  $switch ;
 
     return [$lednew, $con_data];
