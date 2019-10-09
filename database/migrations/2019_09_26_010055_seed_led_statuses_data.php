@@ -18,17 +18,17 @@ class SeedLedStatusesData extends Migration
                 'flag' => 'led',
                 'data' => 0b111,
                 'clientid' => 1,
-                'led1' => 1,
-                'led2' => 0,
-                'led3' => 1,
+                'ch1' => 1,
+                'ch2' => 0,
+                'ch3' => 1,
             ],
             [
                 'flag' => 'con',
                 'data' => 0b011,
                 'clientid' => 1,
-                'led1' => 1,
-                'led2' => 0,
-                'led3' => 1,
+                'ch1' => 1,
+                'ch2' => 0,
+                'ch3' => 1,
             ],
         ];
 

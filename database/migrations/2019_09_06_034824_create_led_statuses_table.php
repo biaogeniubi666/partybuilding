@@ -18,9 +18,9 @@ class CreateLedStatusesTable extends Migration
             $table->string('flag');
             $table->integer('data');
             $table->integer('clientid');
-            $table->boolean('led1');
-            $table->boolean('led2');
-            $table->boolean('led3');
+            $table->boolean('ch1');
+            $table->boolean('ch2');
+            $table->boolean('ch3');
             $table->string('remakes')->nullable();
             $table->nullableTimestamps();
         });
