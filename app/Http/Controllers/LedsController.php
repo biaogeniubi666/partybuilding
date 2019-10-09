@@ -29,8 +29,7 @@ class LedsController extends Controller
     }
 
     public function show(){
-
-        $led = LedStatus::find(1);
+        $led = LedStatus::where('flag', '=', 'led')->first();
         return [$led->ch1, $led->ch2, $led->ch3];
   
     }
