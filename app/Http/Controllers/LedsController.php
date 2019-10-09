@@ -14,25 +14,24 @@ class LedsController extends Controller
 
         // 根据按钮进行灯光指令输出
         $led = LedStatus::find(1);
-        $con = array(ledswitchAll($id, $led->led1, $led->led2, $led->led3));
+        $con = array(ledswitchAll($id, $led->ch1, $led->ch2, $led->ch3));
         $con_data = $con[0][1];
-        ppython1("test_socket::go" , "conled" . $con_data);
+        $led -> update($con[0][0]); //test 更新ledflag
 
-        //test 更新ledflag
-        $led -> update($con[0][0]);
+        ppython1("test_socket::go" , "conled" . $con_data);
     }
 
     public function update(){
 
         $led = LedStatus::first();
-        $lednew = ledonoff($led->id, $led->led1, $led->led2, $led->led3);
+        $lednew = ledonoff($led->id, $led->ch1, $led->ch2, $led->ch3);
         $led->update($lednew);
     }
 
     public function show(){
 
         $led = LedStatus::find(1);
-        return [$led->led1, $led->led2, $led->led3];
+        return [$led->ch1, $led->ch2, $led->ch3];
   
     }
 }
