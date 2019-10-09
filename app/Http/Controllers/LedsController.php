@@ -16,11 +16,9 @@ class LedsController extends Controller
         $led = LedStatus::find(1);
         $con = array(ledswitchAll($id, $led->ch1, $led->ch2, $led->ch3));
         $con_data = $con[0][1];
-        ppython1("test_socket::go" , "conled" . $con_data);
+        $led -> update($con[0][0]); //test 更新ledflag
 
-        //test 更新ledflag
-        $led -> update($con[0][0]);
-        return $con[0][0];
+        ppython1("test_socket::go" , "conled" . $con_data);
     }
 
     public function update(){
