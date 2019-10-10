@@ -35,7 +35,10 @@
 
         <div class="col-xs-12 col-sm-3">
             <div class="boxall">
-                <div class="alltitle">PM2.5</div>
+                <div class="alltitle">
+                    <i class="far fa-spin fa-neuter " aria-hidden="true"></i> 
+                    PM2.5
+                </div>
                 <div class="allnav" id="echart5"></div>
                 <div class="boxfoot"></div>
             </div>
@@ -56,7 +59,7 @@
                     {{-- href="{{ route('led.socketpython',0) }}" --}}
                     aria-label="Left Align"
                     style="padding-bottom: 0px; padding-top: 0px; margin-top: 0.2rem;">
-                    <i class="far fa-lemon " aria-hidden="true"></i> 
+                    <i class="fa fa-spin fa-lemon " aria-hidden="true"></i> 
                     <p style="font-size:.3rem;">总开关</p>
                 </a>
                 <div class="syled">

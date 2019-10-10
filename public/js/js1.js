@@ -163,26 +163,25 @@ function echarts_1(resultdata) {
                     },
             },
         },
-        {
-            type: 'effectScatter',
-            data:resultdata,
-            symbolSize:20,
-            showEffectOn: 'render',
-            rippleEffect: {
-                brushType: 'stroke'
+            {
+                type: 'effectScatter',
+                data:resultdata,
+                symbolSize:20,
+                showEffectOn: 'render',
+                rippleEffect: {
+                    brushType: 'stroke'
+                },
+                hoverAnimation: true,
+                itemStyle: {
+                normal: {
+                color: '#00B2EE',
+                shadowBlur: 20,
+                shadowColor: '#333'
+                }
             },
-            hoverAnimation: true,
-            itemStyle: {
-            normal: {
-            color: '#00B2EE',
-            shadowBlur: 20,
-            shadowColor: '#333'
-            }
-        },
-            zlevel: 1
-        },
-
-    ]
+                zlevel: 1
+            },
+        ],
     };
   
     // 使用刚指定的配置项和数据显示图表。
@@ -509,8 +508,8 @@ var myChart = echarts.init(document.getElementById('echart4'));
                 }
             },
             // data:[{value: resultdata, name: '℃'}]
-            // data:[{value: resultdata}]
-            data:[{value: 60}]
+            data:[{value: resultdata}]
+            // data:[{value: 60}]
         }]
     };
   
@@ -795,11 +794,13 @@ function echarts_6(resultdata) {
             },
         }],
         
-        series: [{
+        series: [
+        {
             name: '甲醛浓度',
             type: 'bar',
             data: resultdata,
             barWidth:'50%', //柱子宽度
+            barGap:"-100%",
             itemStyle: {
                 normal: {
                     color:'#F3944C',
@@ -826,8 +827,29 @@ function echarts_6(resultdata) {
                     color:'#8E8E8E',
                 },
             },
-        }]
-    };    
+            zlevel: 1
+        },
+
+        {
+            name: '甲醛浓度',
+            type: 'bar',
+            data: [60, 60, 60, 60, 60],
+            barWidth:'50%', //柱子宽度
+            barGap:"-100%",
+            itemStyle: {
+                normal: {
+                    color:'#F5D0A9',
+                    opacity: 1,
+                    barBorderRadius: 5,
+                }
+            },
+        }],
+
+        animationEasing: 'elasticOut',
+        animationDelayUpdate: function (idx) {
+            return idx * 5;
+        }
+    };
     // 使用刚指定的配置项和数据显示图表。
     myChart.setOption(option);
     window.addEventListener("resize",function(){
