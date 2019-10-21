@@ -24,7 +24,7 @@ class LedsController extends Controller
         // python2为本地docker测试端口
         // ppython2("test_socket::go" , "conled" . $con_data);
 
-        return redirect()->away('https://datav.aliyun.com/screen/337003?spm=datav.10712490.0.0.9b6139670tNZO4');
+        return redirect()->away('https://datav.aliyuncs.com/share/fa53de078512e64d05b5fd6309ac8f79');
     }
 
     public function update(){
