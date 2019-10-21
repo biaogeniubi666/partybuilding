@@ -2,7 +2,7 @@ $(function () {
 
 
 getdata();
-// document.getElementById("ledswitch_all").addEventListener("click",ledall);
+document.getElementById("ledswitch_all").addEventListener("click",ledall);
 document.getElementById("ledswitch_led1").addEventListener("click",led1);
 document.getElementById("ledswitch_led2").addEventListener("click",led2);
 document.getElementById("ledswitch_led3").addEventListener("click",led3);

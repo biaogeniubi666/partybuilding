@@ -54,10 +54,9 @@
 
             <div class="boxall">
                 <div class="alltitle">总灯光控制</div>
-                <a  url="javascript:void(0)" 
-                    click="ledall();"
+                <a  
                     type="button" class="btn btn-success btn-sm center-block" 
-                    {{-- id="ledswitch_all" --}}
+                    id="ledswitch_all"
                     {{-- href="{{ route('led.socketpython',0) }}" --}}
                     aria-label="Left Align"
                     style="padding-bottom: 0px; padding-top: 0px; margin-top: 0.2rem;">
