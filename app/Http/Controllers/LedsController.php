@@ -18,7 +18,11 @@ class LedsController extends Controller
         $con_data = $con[0][1];
         $led -> update($con[0][0]); //test 更新ledflag
 
-        ppython1("test_socket::go" , "conled" . $con_data);
+        // python1为阿里云服务器的端口
+        // ppython1("test_socket::go" , "conled" . $con_data); 
+        
+        // python2为本地docker测试端口
+        ppython2("test_socket::go" , "conled" . $con_data);
     }
 
     public function update(){

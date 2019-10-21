@@ -34,7 +34,7 @@
                 var whei=$(window).width()
             $("html").css({fontSize:whei/20})
         });
-	});
+    });
 </script>
 
 
@@ -60,6 +60,7 @@
 <script type="text/javascript" src="js/area_echarts.js"></script> 
 <script type="text/javascript" src="js/js1.js"></script> 
 <script type="text/javascript" src="js/led_controller.js"></script> 
+{{-- <script src="{{ cdn('js/jquery.pjax.js') }}"></script> --}}
 </body>
 
 </html>

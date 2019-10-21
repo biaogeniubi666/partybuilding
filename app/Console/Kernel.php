@@ -54,6 +54,8 @@ class Kernel extends ConsoleKernel
         });
     }
 
+    // * * * * * php /var/www/partybuilding/artisan schedule:run
+
     /**
      * Register the commands for the application.
      *
