@@ -35,7 +35,7 @@ function led1() {
 
 function led2() {
     $.ajax({
-        url:'/socketpython/1',
+        url:'/socketpython/2',
         type:'get',
         success: function () {
             getdata();
