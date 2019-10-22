@@ -23,8 +23,11 @@ class LedsController extends Controller
         
         // python2为本地docker测试端口
         // ppython2("test_socket::go" , "conled" . $con_data);
-
-        return redirect()->away('https://datav.aliyuncs.com/share/fa53de078512e64d05b5fd6309ac8f79');
+        
+        if ($id == 2) {
+            return redirect()->away('https://datav.aliyuncs.com/share/fa53de078512e64d05b5fd6309ac8f79');
+        }
+        
     }
 
     public function update(){

@@ -81,7 +81,7 @@
                         <a type="button" id="ledswitch_led3"
                         class="btn btn-success center-block btn-sm" 
                         aria-label="Left Align">
-                        <p style="font-size:.2rem;">测试3</p>
+                        <p style="font-size:.2rem;">DataV</p>
                     </a>   
                 </div>
             </div>
