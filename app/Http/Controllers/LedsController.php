@@ -25,7 +25,7 @@ class LedsController extends Controller
         // ppython2("test_socket::go" , "conled" . $con_data);
 
         if ($id == 3) {
-            return redirect()->away('https://datav.aliyuncs.com/share/fa53de078512e64d05b5fd6309ac8f79');
+            return redirect()->away('https://datav.aliyuncs.com/share/ad679c346d86e579c902b33e1330f040');
         }
         
     }
