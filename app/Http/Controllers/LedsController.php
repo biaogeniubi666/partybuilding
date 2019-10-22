@@ -24,8 +24,16 @@ class LedsController extends Controller
         // python2为本地docker测试端口
         // ppython2("test_socket::go" , "conled" . $con_data);
 
+        
         if ($id == 3) {
-            return redirect()->away('https://datav.aliyuncs.com/share/53acbc42122368a68f2de87a816f38ae');
+            $token = "5t1guoeche5-r3ahB8vdD-V5LRV60woz";
+            $screenID = "53acbc42122368a68f2de87a816f38ae";
+            $time = time()*1000;
+            $stringToSign = $screenID.'|'.$time;
+            $signature = urlencode(base64_encode(hash_hmac('sha256', $stringToSign, $token, true)));
+            $url = "http://datav.aliyuncs.com/share/".$screenID."?_datav_time=".$time."&_datav_signature=".$signature;
+            
+            return redirect()->away($url);
         }
         
     }
