@@ -60,7 +60,7 @@
                     {{-- href="{{ route('led.socketpython',0) }}" --}}
                     aria-label="Left Align"
                     style="padding-bottom: 0px; padding-top: 0px; margin-top: 0.2rem;">
-                    <i class="fa fa-spin fa-lemon " aria-hidden="true"></i> 
+                    <i class="fa " aria-hidden="true"></i> 
                     <p style="font-size:.3rem;">总开关</p>
                 </a>
                 <div class="syled">

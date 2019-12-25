@@ -39,13 +39,7 @@
 
 
 <body>
-    <div class="canvas" style="opacity: .2">
-        <iframe frameborder="0" src="js/index.html" style="width: 100%; height: 100%"></iframe>
-    </div>
-    <div class="loading">
-        <div class="loadbox"> <img src="picture/loading.gif"> 页面加载中... </div>
-    </div>
-
+  
     <div class="container-fulid">
         @include('layouts._header')
     

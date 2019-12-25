@@ -33,7 +33,7 @@ class AirsController extends Controller
 
         return [$co2_forchart, $voc_forchart,
 		$pm25_forchart, $ch2o_forchart, $humi, $temp];
-		
+
     }
 
 	public function create(Air $air)

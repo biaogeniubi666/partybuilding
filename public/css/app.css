@@ -10645,7 +10645,7 @@ a.text-dark:focus {
 }
 
 /*!
- * Font Awesome Free 5.11.1 by @fontawesome - https://fontawesome.com
+ * Font Awesome Free 5.11.2 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 
@@ -16472,7 +16472,7 @@ readers do not read off random characters that represent icons */
 }
 
 /*!
- * Font Awesome Free 5.11.1 by @fontawesome - https://fontawesome.com
+ * Font Awesome Free 5.11.2 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 
@@ -16481,8 +16481,8 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 400;
   font-display: auto;
-  src: url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.eot?b6579220162705be426ad4db0dc43f6b);
-  src: url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.eot?b6579220162705be426ad4db0dc43f6b) format("embedded-opentype"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.woff2?772a0f14c850c8b0dfe283a95857583e) format("woff2"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.woff?14f22fbed8146dbf3b497bb32d8491b0) format("woff"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.ttf?9230982faf6ed4d1dab07babfb813777) format("truetype"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.svg?8cd2768111e3091948920a3ad11f96c6) format("svg");
+  src: url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.eot?c1a866ec0e04a5e1915b41fcf261457c);
+  src: url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.eot?c1a866ec0e04a5e1915b41fcf261457c) format("embedded-opentype"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.woff2?f5f2566b93e89391da4db79462b8078b) format("woff2"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.woff?c4f508e7c4f01a9eeba7f08155cde04e) format("woff"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.ttf?65b286af947c0d982ca01b40e1fcab38) format("truetype"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.svg?7b9568e6389b1f8ae0902cd39665fc1e) format("svg");
 }
 
 .far {
@@ -16491,7 +16491,7 @@ readers do not read off random characters that represent icons */
 }
 
 /*!
- * Font Awesome Free 5.11.1 by @fontawesome - https://fontawesome.com
+ * Font Awesome Free 5.11.2 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 
@@ -16500,8 +16500,8 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 900;
   font-display: auto;
-  src: url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.eot?1898ebd2e3162e7ca8627073d865b893);
-  src: url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.eot?1898ebd2e3162e7ca8627073d865b893) format("embedded-opentype"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.woff2?4cc04a31c42f2f9d951547bbce75960b) format("woff2"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.woff?db525089f5101b59a66184d109e6f917) format("woff"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.ttf?b1161bce5381a5fa7aacc073e1a01dd3) format("truetype"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.svg?1d825f28ae4e412886fb0123b94a8ac2) format("svg");
+  src: url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.eot?8e4a6dcc692b3887f9f542cd6894d6d4);
+  src: url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.eot?8e4a6dcc692b3887f9f542cd6894d6d4) format("embedded-opentype"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.woff2?44d537ab79f921fde5a28b2c1636f397) format("woff2"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.woff?333bae208dc363746961b234ff6c2500) format("woff"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.ttf?0bff33a5fd7ec390235476b4859747a0) format("truetype"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.svg?c2801fb415f03c7b170934769d7b5397) format("svg");
 }
 
 .fa,
@@ -16511,7 +16511,7 @@ readers do not read off random characters that represent icons */
 }
 
 /*!
- * Font Awesome Free 5.11.1 by @fontawesome - https://fontawesome.com
+ * Font Awesome Free 5.11.2 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 
@@ -16520,235 +16520,266 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: normal;
   font-display: auto;
-  src: url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.eot?451b51d8700fb035bcaaa9e8710b384a);
-  src: url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.eot?451b51d8700fb035bcaaa9e8710b384a) format("embedded-opentype"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.woff2?0425d661f34ffa46604c9dfa344c03bb) format("woff2"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.woff?85b063debeb5d5f079776ac1a9c924cb) format("woff"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.ttf?189c0326f75931886d5b60cde8b5628f) format("truetype"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.svg?3a19eb0134e93ea0caa5826f5fb7b642) format("svg");
+  src: url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.eot?5063b105c7646c8043d58c5289f02cca);
+  src: url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.eot?5063b105c7646c8043d58c5289f02cca) format("embedded-opentype"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.woff2?cccc9d29470e879e40eb70249d9a2705) format("woff2"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.woff?c5e0f14f88a828261ba01558ce2bf26f) format("woff"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.ttf?06147b6cd88c7346cecd1edd060cd5de) format("truetype"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.svg?a9c4bb7348f42626454c988dbde1d0a0) format("svg");
 }
 
 .fab {
   font-family: "Font Awesome 5 Brands";
 }
 
-.carousel {
+/* universal */
+
+body {
+  font-family: Helvetica, "Microsoft YaHei", Arial, sans-serif;
+  font-size: 14px;
+}
+
+/* header */
+
+.navbar-static-top {
+  border-color: #0e3c41;
+  background-color: #fff;
+  box-shadow: 0px 1px 11px 2px #5a86ff;
+  border-top: 14px solid #0a0929;
+  border-bottom: 1px solid #0e3c41;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  height: 12rem;
+  font-size: 3rem;
+}
+
+.navbar-brand {
+  font-size: 5rem;
+}
+
+/* Sticky footer styles */
+
+html {
   position: relative;
+  min-height: 100%;
 }
 
-.carousel-inner {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  background-color: #2311cc;
+  background-size: cover;
+  color: #666;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
-.carousel-item {
-  position: relative;
-  display: none;
-  align-items: center;
-  width: 100%;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  perspective: 1000px;
+.clearfix:after {
+  clear: both;
+  display: table;
+  content: " ";
 }
 
-.carousel-item.active,
-.carousel-item-next,
-.carousel-item-prev {
-  display: block;
-  transition: transform 0.6s ease-in-out;
+.clearfix:before {
+  display: table;
+  content: " ";
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .carousel-item.active,
-  .carousel-item-next,
-  .carousel-item-prev {
-    transition: none;
-  }
-}
-
-.carousel-item-next,
-.carousel-item-prev {
+.footer {
   position: absolute;
-  top: 0;
-}
-
-.carousel-item-next.carousel-item-left,
-.carousel-item-prev.carousel-item-right {
-  transform: translateX(0);
-}
-
-@supports (transform-style: preserve-3d) {
-  .carousel-item-next.carousel-item-left,
-  .carousel-item-prev.carousel-item-right {
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.carousel-item-next,
-.active.carousel-item-right {
-  transform: translateX(100%);
-}
-
-@supports (transform-style: preserve-3d) {
-  .carousel-item-next,
-  .active.carousel-item-right {
-    transform: translate3d(100%, 0, 0);
-  }
-}
-
-.carousel-item-prev,
-.active.carousel-item-left {
-  transform: translateX(-100%);
-}
-
-@supports (transform-style: preserve-3d) {
-  .carousel-item-prev,
-  .active.carousel-item-left {
-    transform: translate3d(-100%, 0, 0);
-  }
-}
-
-.carousel-fade .carousel-item {
-  opacity: 0;
-  transition-duration: 0.6s;
-  transition-property: opacity;
-}
-
-.carousel-fade .carousel-item.active,
-.carousel-fade .carousel-item-next.carousel-item-left,
-.carousel-fade .carousel-item-prev.carousel-item-right {
-  opacity: 1;
-}
-
-.carousel-fade .active.carousel-item-left,
-.carousel-fade .active.carousel-item-right {
-  opacity: 0;
-}
-
-.carousel-fade .carousel-item-next,
-.carousel-fade .carousel-item-prev,
-.carousel-fade .carousel-item.active,
-.carousel-fade .active.carousel-item-left,
-.carousel-fade .active.carousel-item-prev {
-  transform: translateX(0);
-}
-
-@supports (transform-style: preserve-3d) {
-  .carousel-fade .carousel-item-next,
-  .carousel-fade .carousel-item-prev,
-  .carousel-fade .carousel-item.active,
-  .carousel-fade .active.carousel-item-left,
-  .carousel-fade .active.carousel-item-prev {
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-  position: absolute;
-  top: 0;
   bottom: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 15%;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 5rem;
+  background-color: #000;
+}
+
+.footer .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.footer .container p {
+  margin: 19px 0;
+  color: #c1c1c1;
+  font-size: 2rem;
+}
+
+.footer .container p a {
+  color: inherit;
+}
+
+/* Add container and footer space */
+
+#app > div.container {
+  margin-bottom: 100px;
+}
+
+/* box */
+
+.boxall {
+  border: 3px solid rgba(25, 186, 139, 0.17);
+  padding: 0 2rem 4rem 2rem;
+  background: rgba(255, 255, 255, 0.04);
+  background-size: 100% auto;
+  position: relative;
+  margin-bottom: 20px;
+  z-index: 10;
+  height: 37rem;
+}
+
+.boxall:before,
+.boxall:after {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  content: "";
+  border-top: 3px solid #0252ffa2;
+  top: 0;
+}
+
+.boxall:before,
+.boxfoot:before {
+  border-left: 3px solid #0252ffa2;
+  left: 0;
+}
+
+.boxall:after,
+.boxfoot:after {
+  border-right: 3px solid #0252ffa2;
+  right: 0;
+}
+
+.boxall_3d {
+  border: 3px solid rgba(25, 186, 139, 0.17);
+  padding: 0 2rem 4rem 2rem;
+  background: rgba(255, 255, 255, 0.04);
+  background-size: 100% auto;
+  position: relative;
+  margin-bottom: 20px;
+  z-index: 10;
+  height: 75rem;
+}
+
+.boxall_3d:before,
+.boxall_3d:after {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  content: "";
+  border-top: 3px solid #0252ffa2;
+  top: 0;
+}
+
+.boxall_3d:before,
+.boxfoot:before {
+  border-left: 3px solid #0252ffa2;
+  left: 0;
+}
+
+.boxall_3d:after,
+.boxfoot:after {
+  border-right: 3px solid #0252ffa2;
+  right: 0;
+}
+
+.alltitle {
+  font-size: 3rem;
   color: #fff;
   text-align: center;
-  opacity: 0.5;
+  line-height: 4rem;
 }
 
-.carousel-control-prev:hover,
-.carousel-control-prev:focus,
-.carousel-control-next:hover,
-.carousel-control-next:focus {
-  color: #fff;
-  text-decoration: none;
-  outline: 0;
-  opacity: 0.9;
-}
-
-.carousel-control-prev {
-  left: 0;
-}
-
-.carousel-control-next {
-  right: 0;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background: transparent no-repeat center center;
-  background-size: 100% 100%;
-}
-
-.carousel-control-prev-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e");
-}
-
-.carousel-control-next-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
-}
-
-.carousel-indicators {
+.boxfoot {
   position: absolute;
-  right: 0;
-  bottom: 10px;
+  bottom: 0;
+  width: 100%;
   left: 0;
-  z-index: 15;
-  display: flex;
-  justify-content: center;
-  padding-left: 0;
-  margin-right: 15%;
-  margin-left: 15%;
+}
+
+.boxfoot:before,
+.boxfoot:after {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  content: "";
+  border-bottom: 3px solid #0252ffa2;
+  bottom: 0;
+}
+
+.allnav {
+  height: calc(100% - 30px);
+}
+
+/*安防box特供*/
+
+.pulll_left {
+  float: left;
+}
+
+.bar {
+  background: rgba(101, 132, 226, 0);
+  padding: 2rem;
+}
+
+.barbox1 li {
+  width: 33%;
+  text-align: center;
+  position: relative;
+  z-index: 100;
+  font-size: 2.5rem;
+  color: rgba(255, 255, 255, 0.7);
+  padding-top: 0.1rem;
+}
+
+.barbox2 li {
+  width: 33%;
+  text-align: center;
+  position: relative;
+  z-index: 100;
+  font-size: 2.5rem;
+  color: #16db79;
+  padding: 0.05rem 0;
+  font-family: electronicFont;
+  font-weight: bold;
+}
+
+.datavbg {
+  opacity: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-width: 500px;
+  position: fixed;
+  z-index: -10;
+  zoom: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-position: center 0;
+}
+
+ul {
   list-style: none;
 }
 
-.carousel-indicators li {
-  position: relative;
-  flex: 0 1 auto;
-  width: 30px;
-  height: 3px;
-  margin-right: 3px;
-  margin-left: 3px;
-  text-indent: -999px;
-  cursor: pointer;
-  background-color: rgba(255, 255, 255, 0.5);
+ul > li {
+  float: left;
+  padding: 0 0.1rem;
 }
 
-.carousel-indicators li::before {
+/*谷哥滚动条样式*/
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
   position: absolute;
-  top: -10px;
-  left: 0;
-  display: inline-block;
-  width: 100%;
-  height: 10px;
-  content: "";
 }
 
-.carousel-indicators li::after {
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  display: inline-block;
-  width: 100%;
-  height: 10px;
-  content: "";
+::-webkit-scrollbar-thumb {
+  background-color: #0252ffa2;
 }
 
-.carousel-indicators .active {
-  background-color: #fff;
-}
-
-.carousel-caption {
-  position: absolute;
-  right: 15%;
-  bottom: 20px;
-  left: 15%;
-  z-index: 10;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: #fff;
-  text-align: center;
+::-webkit-scrollbar-track {
+  background-color: #ddd;
 }
 
 .center-block {
